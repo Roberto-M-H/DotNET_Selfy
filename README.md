@@ -1,4 +1,4 @@
-# .NET
+# Housing price prediction
 
 COLABORATORI:
 
