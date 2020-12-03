@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2D+PFqiR08/Eo2lu5IqyWrglES11xQo8sWJqK/IHC2aVh9T3I1RjJ6oC5oKvzs3GPotjjDy1h8OvxX25QUGRIA==",
+  "dgSpecHash": "9WpRXpmQ5LxRGmuf4cPSJvUwOSoBT8qwXjJZWDUyCHlYAI1Y5maKJcyjgyIXm6pIzulXWcJ33zDyVmP25sXitQ==",
   "success": true,
-  "projectFilePath": "D:\\.net\\proiect\\.NET\\HousePriceAPI.csproj",
+  "projectFilePath": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\stefa\\.nuget\\packages\\lightgbm\\2.2.3\\lightgbm.2.2.3.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",

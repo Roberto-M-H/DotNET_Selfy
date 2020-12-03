@@ -97,11 +97,3 @@ C:\Users\stefa\Downloads\HousePriceAPI\bin\Debug\netcoreapp3.1\runtimes\linux-x6
 C:\Users\stefa\Downloads\HousePriceAPI\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\lib_lightgbm.dylib
 C:\Users\stefa\Downloads\HousePriceAPI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\lib_lightgbm.dll
 C:\Users\stefa\Downloads\HousePriceAPI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\lightgbm.exe
-D:\.net\proiect\.NET\obj\Debug\netcoreapp3.1\HousePriceAPI.csprojAssemblyReference.cache
-D:\.net\proiect\.NET\obj\Debug\netcoreapp3.1\HousePriceAPI.AssemblyInfoInputs.cache
-D:\.net\proiect\.NET\obj\Debug\netcoreapp3.1\HousePriceAPI.AssemblyInfo.cs
-D:\.net\proiect\.NET\obj\Debug\netcoreapp3.1\HousePriceAPI.csproj.CoreCompileInputs.cache
-D:\.net\proiect\.NET\obj\Debug\netcoreapp3.1\HousePriceAPI.MvcApplicationPartsAssemblyInfo.cs
-D:\.net\proiect\.NET\obj\Debug\netcoreapp3.1\HousePriceAPI.MvcApplicationPartsAssemblyInfo.cache
-D:\.net\proiect\.NET\obj\Debug\netcoreapp3.1\HousePriceAPI.dll
-D:\.net\proiect\.NET\obj\Debug\netcoreapp3.1\HousePriceAPI.pdb

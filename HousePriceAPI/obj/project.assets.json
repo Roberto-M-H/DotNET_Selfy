@@ -6109,11 +6109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.net\\proiect\\.NET\\HousePriceAPI.csproj",
+      "projectUniqueName": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj",
       "projectName": "HousePriceAPI",
-      "projectPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI.csproj",
+      "projectPath": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj",
       "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-      "outputPath": "D:\\.net\\proiect\\.NET\\obj\\",
+      "outputPath": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
