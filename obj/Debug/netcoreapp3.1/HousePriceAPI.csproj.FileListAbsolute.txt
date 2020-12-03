@@ -92,3 +92,8 @@ C:\Users\stefa\Downloads\HousePriceAPI\obj\Debug\netcoreapp3.1\HousePriceAPI.csp
 C:\Users\stefa\Downloads\HousePriceAPI\obj\Debug\netcoreapp3.1\HousePriceAPI.dll
 C:\Users\stefa\Downloads\HousePriceAPI\obj\Debug\netcoreapp3.1\HousePriceAPI.pdb
 C:\Users\stefa\Downloads\HousePriceAPI\obj\Debug\netcoreapp3.1\HousePriceAPI.genruntimeconfig.cache
+C:\Users\stefa\Downloads\HousePriceAPI\bin\Debug\netcoreapp3.1\Microsoft.ML.LightGbm.dll
+C:\Users\stefa\Downloads\HousePriceAPI\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\lib_lightgbm.so
+C:\Users\stefa\Downloads\HousePriceAPI\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\lib_lightgbm.dylib
+C:\Users\stefa\Downloads\HousePriceAPI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\lib_lightgbm.dll
+C:\Users\stefa\Downloads\HousePriceAPI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\lightgbm.exe

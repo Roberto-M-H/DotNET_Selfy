@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KEGtWtonjlvKq6XiccQGj0GGvf28Q73ank97ijijlXe96Xg86hk6c3Esmt000rlrBDV1nolr9DRg1L34uBd79w==",
+  "dgSpecHash": "9WpRXpmQ5LxRGmuf4cPSJvUwOSoBT8qwXjJZWDUyCHlYAI1Y5maKJcyjgyIXm6pIzulXWcJ33zDyVmP25sXitQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\stefa\\.nuget\\packages\\lightgbm\\2.2.3\\lightgbm.2.2.3.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.0\\microsoft.extensions.configuration.2.1.0.nupkg.sha512",
@@ -20,6 +21,7 @@
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.ml.cpumath\\1.5.2\\microsoft.ml.cpumath.1.5.2.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.ml.dataview\\1.5.2\\microsoft.ml.dataview.1.5.2.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.ml.fasttree\\1.5.2\\microsoft.ml.fasttree.1.5.2.nupkg.sha512",
+    "C:\\Users\\stefa\\.nuget\\packages\\microsoft.ml.lightgbm\\1.5.2\\microsoft.ml.lightgbm.1.5.2.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
