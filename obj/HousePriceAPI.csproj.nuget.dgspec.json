@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Stefan\\OneDrive\\Desktop\\HousePriceAPI\\HousePriceAPI.csproj": {}
+    "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Stefan\\OneDrive\\Desktop\\HousePriceAPI\\HousePriceAPI.csproj": {
+    "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Stefan\\OneDrive\\Desktop\\HousePriceAPI\\HousePriceAPI.csproj",
+        "projectUniqueName": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj",
         "projectName": "HousePriceAPI",
-        "projectPath": "c:\\Users\\Stefan\\OneDrive\\Desktop\\HousePriceAPI\\HousePriceAPI.csproj",
-        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Stefan\\OneDrive\\Desktop\\HousePriceAPI\\obj\\",
+        "projectPath": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj",
+        "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -30,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.Extensions.ML": {
               "target": "Package",
@@ -77,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

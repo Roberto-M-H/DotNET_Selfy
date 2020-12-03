@@ -28,6 +28,9 @@ namespace HousePriceAPI
             });
             services.AddPredictionEnginePool<HousePriceData, HousePricePrediction>()
                 .FromFile(modelName: "HousePriceModel", filePath: "MLmodels/MLModel.zip", watchForChanges: true);
+            services.AddPredictionEnginePool<TexasPriceData, TexasPricePrediction>().FromFile(modelName: "TexasPriceModel", filePath: "MLmodels/Texas.zip",watchForChanges:true);
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
