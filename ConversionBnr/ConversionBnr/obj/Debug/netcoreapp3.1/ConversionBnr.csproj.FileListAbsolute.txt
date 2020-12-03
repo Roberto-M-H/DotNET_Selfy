@@ -1,0 +1,15 @@
+D:\C #\ConversionBnr\ConversionBnr\bin\Debug\netcoreapp3.1\ConversionBnr.exe
+D:\C #\ConversionBnr\ConversionBnr\bin\Debug\netcoreapp3.1\ConversionBnr.deps.json
+D:\C #\ConversionBnr\ConversionBnr\bin\Debug\netcoreapp3.1\ConversionBnr.runtimeconfig.json
+D:\C #\ConversionBnr\ConversionBnr\bin\Debug\netcoreapp3.1\ConversionBnr.runtimeconfig.dev.json
+D:\C #\ConversionBnr\ConversionBnr\bin\Debug\netcoreapp3.1\ConversionBnr.dll
+D:\C #\ConversionBnr\ConversionBnr\bin\Debug\netcoreapp3.1\ConversionBnr.pdb
+D:\C #\ConversionBnr\ConversionBnr\obj\Debug\netcoreapp3.1\ConversionBnr.csprojAssemblyReference.cache
+D:\C #\ConversionBnr\ConversionBnr\obj\Debug\netcoreapp3.1\ConversionBnr.AssemblyInfoInputs.cache
+D:\C #\ConversionBnr\ConversionBnr\obj\Debug\netcoreapp3.1\ConversionBnr.AssemblyInfo.cs
+D:\C #\ConversionBnr\ConversionBnr\obj\Debug\netcoreapp3.1\ConversionBnr.csproj.CoreCompileInputs.cache
+D:\C #\ConversionBnr\ConversionBnr\obj\Debug\netcoreapp3.1\ConversionBnr.dll
+D:\C #\ConversionBnr\ConversionBnr\obj\Debug\netcoreapp3.1\ConversionBnr.pdb
+D:\C #\ConversionBnr\ConversionBnr\obj\Debug\netcoreapp3.1\ConversionBnr.genruntimeconfig.cache
+D:\C #\ConversionBnr\ConversionBnr\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\C #\ConversionBnr\ConversionBnr\obj\Debug\netcoreapp3.1\ConversionBnr.csproj.CopyComplete
