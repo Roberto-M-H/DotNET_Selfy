@@ -7,6 +7,7 @@ Housing price production is one of those simple machine learning projects that t
       #Management date de antrenament si antrenare algoritmi, utilizand scaffolding, obtinerea unui model antrenat pentru 3 orase
       #Predictii house price pentru 3 orase
       #Proiect ASP.NET cu rute separate in Controller pentru fiecare oras 
+      #GET pentru  conversii la BNR si la European Central Bank
 
 ## Screenshots
 
