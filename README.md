@@ -34,6 +34,4 @@ Housing price production is one of those simple machine learning projects that t
 5. [Plesescu Adrian](https://github.com/AdutP)
 
 ## License
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © [Sims3]()
+© [Sims3]()
