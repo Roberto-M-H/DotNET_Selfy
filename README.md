@@ -3,7 +3,10 @@
 Housing price production is one of those simple machine learning projects that test mathematical knowledge of Machine Learning newbies. This project aims to predict the price of a selling house based on factors such as location, type, number of rooms, etc.
 
 ## Build status
-
+    #Lab 9:
+      #Management date de antrenament si antrenare algoritmi, utilizand scaffolding, obtinerea unui model antrenat pentru 3 orase
+      #Predictii house price pentru 3 orase
+      #Proiect ASP.NET cu rute separate in Controller pentru fiecare oras 
 
 ## Screenshots
 
