@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj": {}
+    "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj": {
+    "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj",
+        "projectUniqueName": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
         "projectName": "HousePriceAPI",
-        "projectPath": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\HousePriceAPI.csproj",
+        "projectPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
         "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stefa\\Downloads\\HousePriceAPI\\obj\\",
+        "outputPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -44,6 +44,34 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.Extensions.ML": {
               "target": "Package",
               "version": "[1.5.2, )"
