@@ -1,13 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.ML;
-using Microsoft.ML;
-using System.IO;
 using HousePriceAPI.DataModels;
-
+using HousePriceAPI.Data;
+using MediatR;
+using HousePriceAPI.DTOs;
 namespace HousePriceAPI.Controllers
 {
     [Route("api/v1/predictions")]
@@ -48,9 +46,14 @@ namespace HousePriceAPI.Controllers
     public class TexasController : ControllerBase
     {
         private readonly PredictionEnginePool<TexasPriceData, TexasPricePrediction> _predictionEnginePool;
-        public TexasController(PredictionEnginePool<TexasPriceData, TexasPricePrediction> predictionEnginePool)
+        private readonly IMediator mediator;
+
+        public TexasController(PredictionEnginePool<TexasPriceData, TexasPricePrediction> predictionEnginePool, IMediator mediator)
         {
             this._predictionEnginePool = predictionEnginePool;
+            this.mediator = mediator;
+         
+           
         }
 
         [HttpPost]
@@ -72,6 +75,16 @@ namespace HousePriceAPI.Controllers
             //HousePricePrediction prediction = predictionEngine.Predict(data2);
 
             return Ok(predictedValue.Score);
+        }
+        [HttpGet]
+        public async Task<ActionResult<Texa>> Get()
+        {
+            var persons = await mediator.Send(new GetTexas());
+            if (persons == null)
+            {
+                return NotFound();
+            }
+            return Ok(persons);
         }
     }
     [Route("api/v1/Melbourne")]
