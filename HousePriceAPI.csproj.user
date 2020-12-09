@@ -6,5 +6,6 @@
   <PropertyGroup>
     <ActiveDebugProfile>HousePriceAPI</ActiveDebugProfile>
     <ShowAllFiles>true</ShowAllFiles>
+    <NameOfLastUsedPublishProfile>HousePriceApi - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

@@ -5,6 +5,7 @@ using HousePriceAPI.DTOs;
 using HousePriceAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Threading;
+using System.Linq;
 
 namespace HousePriceAPI.Business
 {
@@ -18,7 +19,7 @@ namespace HousePriceAPI.Business
 
         public async Task<List<Texa>> Handle(GetTexas request, CancellationToken cancellationToken)
         {
-            var fields = await this.context.Texas.ToListAsync();
+            var fields = await this.context.Texas.Take(20).ToListAsync();
             return fields;
         }
     }

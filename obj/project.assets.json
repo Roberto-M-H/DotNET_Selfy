@@ -7877,23 +7877,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Stefan\\.nuget\\packages\\": {},
+    "C:\\Users\\stefa\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stefan\\OneDrive\\Desktop\\test\\HousePriceAPI.csproj",
+      "projectUniqueName": "D:\\.net\\proiect\\.NET\\HousePriceAPI.csproj",
       "projectName": "HousePriceAPI",
-      "projectPath": "C:\\Users\\Stefan\\OneDrive\\Desktop\\test\\HousePriceAPI.csproj",
-      "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stefan\\OneDrive\\Desktop\\test\\obj\\",
+      "projectPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI.csproj",
+      "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
+      "outputPath": "D:\\.net\\proiect\\.NET\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
