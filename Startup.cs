@@ -59,6 +59,8 @@ namespace HousePriceAPI
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HousePriceAPI v1"));
             }
 
+            app.UseCors(MyAllowSpecificOrigins);
+
             app.UseRouting();
 
             app.UseAuthorization();
