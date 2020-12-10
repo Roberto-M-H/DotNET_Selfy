@@ -1,0 +1,191 @@
+﻿@page "/predicttexas"
+@inject HttpClient Http
+
+
+<h3>Predict House Price Texas</h3>
+
+<div class="col-12">
+    <h3><b>Enter House Information</b></h3>
+    <hr />
+
+    <EditForm Model="@house" OnValidSubmit="@PredictPrice">
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Id :</label>
+            <input type="number" class="form-control col-3" @bind="house.Id" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Date :</label>
+            <input type="text" class="form-control col-3" @bind="house.Date" placeholder="string" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Price :</label>
+            <input type="number" class="form-control col-3" @bind="house.Price" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Bedrooms :</label>
+            <input type="number" class="form-control col-3" @bind="house.Bedrooms" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Bathrooms :</label>
+            <input type="number" class="form-control col-3" @bind="house.Bathrooms" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftLiving :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftLiving" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftLot :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftLot" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Floors :</label>
+            <input type="number" class="form-control col-3" @bind="house.Floors" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Waterfront :</label>
+            <input type="number" class="form-control col-3" @bind="house.Waterfront" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">View :</label>
+            <input type="number" class="form-control col-3" @bind="house.View" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Condition :</label>
+            <input type="number" class="form-control col-3" @bind="house.Condition" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Grade :</label>
+            <input type="number" class="form-control col-3" @bind="house.Grade" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftAbove :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftAbove" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftBasement :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftBasement" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">YrBuilt :</label>
+            <input type="number" class="form-control col-3" @bind="house.YrBuilt" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">YrRenovated :</label>
+            <input type="number" class="form-control col-3" @bind="house.YrRenovated" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Zipcode :</label>
+            <input type="number" class="form-control col-3" @bind="house.Zipcode" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Lat :</label>
+            <input type="number" class="form-control col-3" @bind="house.Lat" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Long :</label>
+            <input type="number" class="form-control col-3" @bind="house.Long" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftLiving15 :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftLiving15" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftLot15 :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftLot15" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <span class="col-2"></span>
+            <input type="submit" class="form-control col-1 btn btn-primary" value="Save" />
+            <span>&nbsp;</span>
+            <input type="submit" class="form-control col-1 btn btn-primary" value="Clear" />
+        </div>
+    </EditForm>
+</div>
+
+@if (predictedPrice == null)
+{
+    <p><em>Fill in house data...</em></p>
+}
+else
+{
+    <h2>Price prediction : $@predictedPrice.Score</h2>
+}
+
+
+@code {
+
+    public Texa house { get; set; }
+    public Prediction predictedPrice;
+
+    string result;
+
+    public HttpResponseMessage response { get; set; }
+
+    private string apiUrl = "http://localhost:5000/api/v1/Texas";
+
+    protected async override Task OnInitializedAsync()
+    {
+        house = new Texa();
+    }
+
+    private async Task PredictPrice()
+
+    {
+        response = await Http.PostAsJsonAsync(apiUrl, house);
+        result = response.Content.ReadAsStringAsync().Result;
+        predictedPrice = JsonSerializer.Deserialize<Prediction>(result);
+        house = new Texa();
+    }
+
+    public class Texa
+    {
+        public double Id { get; set; }
+        public string Date { get; set; }
+        public double Price { get; set; }
+        public double Bedrooms { get; set; }
+        public double Bathrooms { get; set; }
+        public double SqftLiving { get; set; }
+        public double SqftLot { get; set; }
+        public double Floors { get; set; }
+        public double Waterfront { get; set; }
+        public double View { get; set; }
+        public double Condition { get; set; }
+        public double Grade { get; set; }
+        public double SqftAbove { get; set; }
+        public double SqftBasement { get; set; }
+        public double YrBuilt { get; set; }
+        public double YrRenovated { get; set; }
+        public double Zipcode { get; set; }
+        public double Lat { get; set; }
+        public double Long { get; set; }
+        public double SqftLiving15 { get; set; }
+        public double SqftLot15 { get; set; }
+    }
+
+    public class Prediction
+    {
+        public double Score { get; set; }
+    }
+
+    }

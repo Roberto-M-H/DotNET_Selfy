@@ -1,0 +1,109 @@
+﻿@page "/texasdata"
+@inject HttpClient Http
+
+
+<h3 >TexasData</h3>
+
+@if (houses == null)
+{
+    <Wave Size="70px" />
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Date</th>
+                <th>Price</th>
+                <th>Bedrooms</th>
+                <th>Bathrooms</th>
+                <th>SqftLiving</th>
+                <th>SqftLot</th>
+                <th>Floors</th>
+                <th>Waterfront</th>
+                <th>View</th>
+                <th>Condition</th>
+                <th>Grade</th>
+                <th>SqftAbove</th>
+                <th>SqftBasement</th>
+                <th>YrBuilt</th>
+                <th>YrRenovated</th>
+                <th>Zipcode</th>
+                <th>Lat</th>
+                <th>Long</th>
+                <th>SqftLiving15</th>
+                <th>SqftLot15</th>
+                <th>PredictionId</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var house in houses)
+            {
+                <tr>
+                    <th>Id</th>
+                    <th>@house.Date</th>
+                    <th>@house.Price</th>
+                    <th>@house.Bedrooms</th>
+                    <th>@house.Bathrooms</th>
+                    <th>@house.SqftLiving</th>
+                    <th>@house.SqftLot</th>
+                    <th>@house.Floors</th>
+                    <th>@house.Waterfront</th>
+                    <th>@house.View</th>
+                    <th>@house.Condition</th>
+                    <th>@house.Grade</th>
+                    <th>@house.SqftAbove</th>
+                    <th>@house.SqftBasement</th>
+                    <th>@house.YrBuilt</th>
+                    <th>@house.YrRenovated</th>
+                    <th>@house.Zipcode</th>
+                    <th>@house.Lat</th>
+                    <th>@house.Long</th>
+                    <th>@house.SqftLiving15</th>
+                    <th>@house.SqftLot15</th>
+                    <th>@house.PredictionId</th>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private Texa[] houses;
+
+    private string apiUrl = "http://localhost:5000/api/v1/Texas";
+
+    protected override async Task OnInitializedAsync()
+    {
+        houses = await Http.GetFromJsonAsync<Texa[]>(apiUrl);
+    }
+
+    public class Texa
+    {
+        public double Id { get; set; }
+        public string Date { get; set; }
+        public double Price { get; set; }
+        public double Bedrooms { get; set; }
+        public double Bathrooms { get; set; }
+        public double SqftLiving { get; set; }
+        public double SqftLot { get; set; }
+        public double Floors { get; set; }
+        public double Waterfront { get; set; }
+        public double View { get; set; }
+        public double Condition { get; set; }
+        public double Grade { get; set; }
+        public double SqftAbove { get; set; }
+        public double SqftBasement { get; set; }
+        public double YrBuilt { get; set; }
+        public double YrRenovated { get; set; }
+        public double Zipcode { get; set; }
+        public double Lat { get; set; }
+        public double Long { get; set; }
+        public double SqftLiving15 { get; set; }
+        public double SqftLot15 { get; set; }
+        public int PredictionId { get; set; }
+    }
+
+}
