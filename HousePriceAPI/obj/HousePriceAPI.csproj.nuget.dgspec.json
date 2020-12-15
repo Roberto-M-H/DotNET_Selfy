@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {}
+    "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {
+    "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj",
         "projectName": "HousePriceAPI",
-        "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
-        "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\obj\\",
+        "projectPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj",
+        "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

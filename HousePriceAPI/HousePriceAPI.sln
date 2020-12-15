@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HousePriceAPI", "HousePriceAPI.csproj", "{A1A70946-71A8-4B34-90C7-72CCEAFADBE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HousePriceAPITests", "..\HousePriceAPITests\HousePriceAPITests.csproj", "{8FE61997-75D8-40CE-9DBA-56F62767D53C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorHousePriceApp", "..\BlazorHousePriceApp\BlazorHousePriceApp\BlazorHousePriceApp.csproj", "{11B3593E-51B4-4853-90A2-A52ADA087BAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A1A70946-71A8-4B34-90C7-72CCEAFADBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1A70946-71A8-4B34-90C7-72CCEAFADBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1A70946-71A8-4B34-90C7-72CCEAFADBE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE61997-75D8-40CE-9DBA-56F62767D53C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE61997-75D8-40CE-9DBA-56F62767D53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE61997-75D8-40CE-9DBA-56F62767D53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE61997-75D8-40CE-9DBA-56F62767D53C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B3593E-51B4-4853-90A2-A52ADA087BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B3593E-51B4-4853-90A2-A52ADA087BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B3593E-51B4-4853-90A2-A52ADA087BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B3593E-51B4-4853-90A2-A52ADA087BAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

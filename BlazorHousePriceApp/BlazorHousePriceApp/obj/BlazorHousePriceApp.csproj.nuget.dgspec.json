@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {}
+    "C:\\Users\\Andrei\\Desktop\\Sims3\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
+    "C:\\Users\\Andrei\\Desktop\\Sims3\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
+        "projectUniqueName": "C:\\Users\\Andrei\\Desktop\\Sims3\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
         "projectName": "BlazorHousePriceApp",
-        "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
-        "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\obj\\",
+        "projectPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
+        "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\BlazorHousePriceApp\\BlazorHousePriceApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
