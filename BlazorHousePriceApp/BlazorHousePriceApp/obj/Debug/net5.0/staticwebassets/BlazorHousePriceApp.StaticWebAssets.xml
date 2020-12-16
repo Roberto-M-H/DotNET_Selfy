@@ -1,5 +1,5 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\Andrei\Desktop\Sims3local\BlazorHousePriceApp\BlazorHousePriceApp\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="C:\Users\Andrei\Desktop\Sims3local\BlazorHousePriceApp\BlazorHousePriceApp\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="_content/BlazorPro.Spinkit" Path="C:\Users\Andrei\.nuget\packages\blazorpro.spinkit\1.2.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/BlazorPro.Spinkit" Path="C:\Users\stefa\.nuget\packages\blazorpro.spinkit\1.2.0\build\..\staticwebassets\" />
 </StaticWebAssets>

@@ -5,11 +5,11 @@ using Microsoft.Extensions.ML;
 using HousePriceAPI.DataModels;
 using HousePriceAPI.Data;
 using MediatR;
-using System.Text.Json.Serialization;
 using HousePriceAPI.DTOs;
 
 namespace HousePriceAPI.Controllers
 {
+
     [Route("api/v1/predictions")]
     [ApiController]
     public class HousePriceController : ControllerBase
@@ -36,6 +36,35 @@ namespace HousePriceAPI.Controllers
 
             return Ok(System.Text.Json.JsonSerializer.Serialize(predictedValue));
         }
+    }
+
+    [Route("api/v1/statistica/Texas")]
+    [ApiController]
+    public class TexasStatisticaController:ControllerBase
+    {
+        private readonly IMediator mediator;
+        public TexasStatisticaController( IMediator mediator)
+        {
+         
+            this.mediator = mediator;
+
+
+        }
+        [HttpGet]
+        public async Task<ActionResult<TexasStatistics>> Get()
+        {
+            var fields = await mediator.Send(new GetTexasStatistics());
+            if (fields == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(fields);
+        }
+
+
+
+
     }
 
 

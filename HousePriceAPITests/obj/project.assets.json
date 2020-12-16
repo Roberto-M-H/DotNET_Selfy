@@ -9401,20 +9401,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andrei\\.nuget\\packages\\": {}
+    "C:\\Users\\stefa\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPITests\\HousePriceAPITests.csproj",
+      "projectUniqueName": "D:\\.net\\proiect\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj",
       "projectName": "HousePriceAPITests",
-      "projectPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPITests\\HousePriceAPITests.csproj",
-      "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPITests\\obj\\",
+      "projectPath": "D:\\.net\\proiect\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj",
+      "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
+      "outputPath": "D:\\.net\\proiect\\.NET\\HousePriceAPITests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -9427,11 +9432,11 @@
         "net5.0": {
           "targetAlias": "netcoreapp5.0",
           "projectReferences": {
-            "C:\\Users\\Andrei\\Desktop\\Sims3\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
-              "projectPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj"
+            "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
+              "projectPath": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj"
             },
-            "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj": {
-              "projectPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj"
+            "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {
+              "projectPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj"
             }
           }
         }

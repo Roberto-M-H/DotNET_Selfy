@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj": {}
+    "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj": {
+    "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj",
+        "projectUniqueName": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
         "projectName": "HousePriceAPI",
-        "projectPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\HousePriceAPI.csproj",
-        "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrei\\Desktop\\Sims3\\HousePriceAPI\\obj\\",
+        "projectPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
+        "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
+        "outputPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
