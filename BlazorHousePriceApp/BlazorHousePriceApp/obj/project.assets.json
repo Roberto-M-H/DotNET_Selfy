@@ -136,6 +136,15 @@
           "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -345,6 +354,27 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Radzen.Blazor/2.18.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.0",
+          "Microsoft.CSharp": "4.7.0",
+          "System.Linq.Dynamic.Core": "1.2.2"
+        },
+        "compile": {
+          "lib/net5.0/Radzen.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Radzen.Blazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/Radzen.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Radzen.Blazor.props": {}
+        }
+      },
       "System.IO.Pipelines/5.0.0": {
         "type": "package",
         "compile": {
@@ -352,6 +382,15 @@
         },
         "runtime": {
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {}
+        }
+      },
+      "System.Linq.Dynamic.Core/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {}
         }
       },
       "System.Net.Http.Json/5.0.0": {
@@ -509,6 +548,15 @@
           "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -718,6 +766,27 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Radzen.Blazor/2.18.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.0",
+          "Microsoft.CSharp": "4.7.0",
+          "System.Linq.Dynamic.Core": "1.2.2"
+        },
+        "compile": {
+          "lib/net5.0/Radzen.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Radzen.Blazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/Radzen.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Radzen.Blazor.props": {}
+        }
+      },
       "runtime.any.System.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -737,6 +806,15 @@
         },
         "runtime": {
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {}
+        }
+      },
+      "System.Linq.Dynamic.Core/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {}
         }
       },
       "System.Net.Http.Json/5.0.0": {
@@ -962,6 +1040,75 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
         "microsoft.aspnetcore.metadata.5.0.0.nupkg.sha512",
         "microsoft.aspnetcore.metadata.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Extensions.Configuration/5.0.0": {
@@ -1316,6 +1463,50 @@
         "runtime.json"
       ]
     },
+    "Radzen.Blazor/2.18.6": {
+      "sha512": "0RVfqBrEFUgaFm4TZMALAauzji7rhfvtjTOAZJiuh+rlWpYO0Y/szoeIE6enskdOHR4u4rK7X6BzBF4bJ3hTEw==",
+      "type": "package",
+      "path": "radzen.blazor/2.18.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Radzen.Blazor.props",
+        "buildMultiTargeting/Radzen.Blazor.props",
+        "buildTransitive/Radzen.Blazor.props",
+        "icon.png",
+        "lib/net5.0/Radzen.Blazor.dll",
+        "lib/netstandard2.1/Radzen.Blazor.dll",
+        "radzen.blazor.2.18.6.nupkg.sha512",
+        "radzen.blazor.nuspec",
+        "staticwebassets/Radzen.Blazor.js",
+        "staticwebassets/css/dark-base.css",
+        "staticwebassets/css/dark.css",
+        "staticwebassets/css/default-base.css",
+        "staticwebassets/css/default.css",
+        "staticwebassets/css/humanistic-base.css",
+        "staticwebassets/css/humanistic.css",
+        "staticwebassets/css/software-base.css",
+        "staticwebassets/css/software.css",
+        "staticwebassets/fonts/MaterialIcons-Regular.woff",
+        "staticwebassets/fonts/SourceSansPro-Black.woff",
+        "staticwebassets/fonts/SourceSansPro-BlackIt.woff",
+        "staticwebassets/fonts/SourceSansPro-Bold.woff",
+        "staticwebassets/fonts/SourceSansPro-BoldIt.woff",
+        "staticwebassets/fonts/SourceSansPro-ExtraLight.woff",
+        "staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff",
+        "staticwebassets/fonts/SourceSansPro-It.woff",
+        "staticwebassets/fonts/SourceSansPro-Light.woff",
+        "staticwebassets/fonts/SourceSansPro-LightIt.woff",
+        "staticwebassets/fonts/SourceSansPro-Regular.woff",
+        "staticwebassets/fonts/SourceSansPro-Semibold.woff",
+        "staticwebassets/fonts/SourceSansPro-SemiboldIt.woff",
+        "staticwebassets/fonts/roboto-v15-latin-300.woff",
+        "staticwebassets/fonts/roboto-v15-latin-700.woff",
+        "staticwebassets/fonts/roboto-v15-latin-regular.woff"
+      ]
+    },
     "runtime.any.System.Runtime/4.3.0": {
       "sha512": "fRS7zJgaG9NkifaAxGGclDDoRn9HC7hXACl52Or06a/fxdzDajWb5wov3c6a+gVSlekRoexfjwQSK9sh5um5LQ==",
       "type": "package",
@@ -1367,6 +1558,42 @@
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Linq.Dynamic.Core/1.2.2": {
+      "sha512": "I3IaeyTL7eXF1EmRe5K5qpFomnD0Fd8uLfv7SqBC9IniiM2xaUDMarjDsHT1Qbvv40irH0278RkzEu0ajHKh+w==",
+      "type": "package",
+      "path": "system.linq.dynamic.core/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/System.Linq.Dynamic.Core.dll",
+        "lib/net35/System.Linq.Dynamic.Core.pdb",
+        "lib/net35/System.Linq.Dynamic.Core.xml",
+        "lib/net40/System.Linq.Dynamic.Core.dll",
+        "lib/net40/System.Linq.Dynamic.Core.pdb",
+        "lib/net40/System.Linq.Dynamic.Core.xml",
+        "lib/net45/System.Linq.Dynamic.Core.dll",
+        "lib/net45/System.Linq.Dynamic.Core.pdb",
+        "lib/net45/System.Linq.Dynamic.Core.xml",
+        "lib/net46/System.Linq.Dynamic.Core.dll",
+        "lib/net46/System.Linq.Dynamic.Core.pdb",
+        "lib/net46/System.Linq.Dynamic.Core.xml",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.pdb",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.xml",
+        "lib/uap10.0/System.Linq.Dynamic.Core.dll",
+        "lib/uap10.0/System.Linq.Dynamic.Core.pdb",
+        "lib/uap10.0/System.Linq.Dynamic.Core.pri",
+        "lib/uap10.0/System.Linq.Dynamic.Core.xml",
+        "system.linq.dynamic.core.1.2.2.nupkg.sha512",
+        "system.linq.dynamic.core.nuspec"
       ]
     },
     "System.Net.Http.Json/5.0.0": {
@@ -1503,29 +1730,25 @@
       "BlazorPro.Spinkit >= 1.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.0",
+      "Radzen.Blazor >= 2.18.6",
       "System.Net.Http.Json >= 5.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\stefa\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Florentin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
+      "projectUniqueName": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
       "projectName": "BlazorHousePriceApp",
-      "projectPath": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
-      "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-      "outputPath": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\obj\\",
+      "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
+      "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1562,6 +1785,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "Radzen.Blazor": {
+            "target": "Package",
+            "version": "[2.18.6, )"
           },
           "System.Net.Http.Json": {
             "target": "Package",

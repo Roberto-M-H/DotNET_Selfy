@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.net\\proiect\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj": {}
+    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj": {}
   },
   "projects": {
-    "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
+    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
+        "projectUniqueName": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
         "projectName": "BlazorHousePriceApp",
-        "projectPath": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
-        "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\obj\\",
+        "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
+        "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -57,6 +53,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[2.18.6, )"
+            },
             "System.Net.Http.Json": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -92,22 +92,18 @@
         }
       }
     },
-    "D:\\.net\\proiect\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj": {
+    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\proiect\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj",
+        "projectUniqueName": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj",
         "projectName": "HousePriceAPITests",
-        "projectPath": "D:\\.net\\proiect\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj",
-        "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\proiect\\.NET\\HousePriceAPITests\\obj\\",
+        "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj",
+        "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPITests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -120,11 +116,11 @@
           "net5.0": {
             "targetAlias": "netcoreapp5.0",
             "projectReferences": {
-              "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
-                "projectPath": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj"
+              "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
+                "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj"
               },
-              "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {
-                "projectPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj"
+              "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {
+                "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj"
               }
             }
           }
@@ -186,22 +182,18 @@
         }
       }
     },
-    "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {
+    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
         "projectName": "HousePriceAPI",
-        "projectPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
-        "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\proiect\\.NET\\HousePriceAPI\\obj\\",
+        "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj",
+        "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

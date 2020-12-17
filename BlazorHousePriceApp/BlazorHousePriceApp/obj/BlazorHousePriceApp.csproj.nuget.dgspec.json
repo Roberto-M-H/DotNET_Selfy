@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {}
+    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {}
   },
   "projects": {
-    "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
+    "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
+        "projectUniqueName": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
         "projectName": "BlazorHousePriceApp",
-        "projectPath": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
-        "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\proiect\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\obj\\",
+        "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj",
+        "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -56,6 +52,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[2.18.6, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",

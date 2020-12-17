@@ -13,85 +13,99 @@ namespace BlazorHousePriceApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 1 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 2 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 3 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 4 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 5 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 6 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 7 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 8 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 9 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using BlazorHousePriceApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 10 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using BlazorHousePriceApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 11 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using BlazorPro.Spinkit;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 12 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using System.Text.Json;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+using Radzen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+using Radzen.Blazor;
 
 #line default
 #line hidden
@@ -105,63 +119,115 @@ using System.Text.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 136 "D:\.net\proiect\.NET\BlazorHousePriceApp\BlazorHousePriceApp\Pages\PredictHousePriceTexas.razor"
+#line 188 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\Pages\PredictHousePriceTexas.razor"
        
 
-    public Texa house { get; set; }
+    double choice = 0;
+
+    public Data.Texa house { get; set; }
     public Prediction predictedPrice;
+    public Data.TexasStatistics stats;
+    public Data.CurrencyAPIResponse converter;
+
+    DataItem[] blueChart;
+    DataItem[] greenChart;
+
+    public double m2;
+    public double askingPrice;
+
+
+
 
     string result;
 
     public HttpResponseMessage response { get; set; }
 
     private string apiUrl = "http://localhost:5000/api/v1/Texas";
+    private string conversionUrl = "https://v6.exchangerate-api.com/v6/6adc721f7fb5b27c1916c938/latest/USD";
+    private string apiStats = "http://localhost:5000/api/v1/statistica/Texas";
 
     protected async override Task OnInitializedAsync()
     {
-        house = new Texa();
+        house = new Data.Texa();
+        converter = await Http.GetFromJsonAsync<Data.CurrencyAPIResponse>(conversionUrl);
+
+        stats = await Http.GetFromJsonAsync<Data.TexasStatistics>(apiStats);
+
     }
 
     private async Task PredictPrice()
 
     {
+        predictedPrice = null;
         response = await Http.PostAsJsonAsync(apiUrl, house);
         result = response.Content.ReadAsStringAsync().Result;
         predictedPrice = JsonSerializer.Deserialize<Prediction>(result);
-        house = new Texa();
+
+        blueChart = new DataItem[]
+        {
+        new DataItem
+        {
+            Text = "AvgPrice",
+            Value = stats.price
+        },
+        new DataItem
+        {
+            Text = "PredictedPrice",
+            Value = predictedPrice.Score
+        }
+            };
+        greenChart = new DataItem[]
+        {
+            new DataItem
+        {
+            Text = "AskingPrice",
+            Value = askingPrice
+        },
+        new DataItem
+        {
+            Text = "PredictedPrice",
+            Value = predictedPrice.Score
+        }
+        
+            };
+
+        m2 = predictedPrice.Score / house.SqftLiving;
+        house = new Data.Texa();
+
     }
 
-    public class Texa
-    {
-        public double Id { get; set; }
-        public string Date { get; set; }
-        public double Price { get; set; }
-        public double Bedrooms { get; set; }
-        public double Bathrooms { get; set; }
-        public double SqftLiving { get; set; }
-        public double SqftLot { get; set; }
-        public double Floors { get; set; }
-        public double Waterfront { get; set; }
-        public double View { get; set; }
-        public double Condition { get; set; }
-        public double Grade { get; set; }
-        public double SqftAbove { get; set; }
-        public double SqftBasement { get; set; }
-        public double YrBuilt { get; set; }
-        public double YrRenovated { get; set; }
-        public double Zipcode { get; set; }
-        public double Lat { get; set; }
-        public double Long { get; set; }
-        public double SqftLiving15 { get; set; }
-        public double SqftLot15 { get; set; }
-    }
+
+    /*
+
+    var httpclient = new HttpClient();
+            var response = await httpclient.GetAsync(apiUrl);
+            string responseAsString = response.Content.ReadAsStringAsync().Result;
+            var statistics = System.Text.Json.JsonSerializer.Deserialize<TexasStatistics>(responseAsString);
+
+
+    */
+
+
+
+    
 
     public class Prediction
     {
         public double Score { get; set; }
     }
 
-    
+
+    class DataItem
+    {
+        public string Text { get; set; }
+        public double Value { get; set; }
+
+    }
+
+
+
+
+
 
 #line default
 #line hidden

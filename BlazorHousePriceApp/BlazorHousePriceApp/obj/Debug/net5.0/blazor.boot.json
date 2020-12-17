@@ -31,7 +31,9 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-f2PgoftqEkKRuuiAk6S1MHygOuqZBHzB0HOB3vR93TU=",
       "Microsoft.JSInterop.dll": "sha256-0o\/vt4NH\/VfmWZxWcdLsy7WlafnyiNlCMmFoL1QmfMg=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-5AkXTXHIeXryrSr97JWjBrndsRjoslMVJ8e7FqupHUw=",
+      "Radzen.Blazor.dll": "sha256-4TFJQ+R5OtwgmIz51s1W0Bwl+3PCPuaLl1Uva2z\/zNU=",
       "System.IO.Pipelines.dll": "sha256-qj+ITVhmJUAkSBctDayU4uUjNTKdXqAbF2zAxo7\/mkM=",
+      "System.Linq.Dynamic.Core.dll": "sha256-yKxCuPOqV2E4SrBxCu1Vq9Mbj115+hXqacqOaMDZxhU=",
       "Microsoft.CSharp.dll": "sha256-pro72EdtT0dffSKHvmvZ6KMWjRqZK9iKsN+T6OaX\/WM=",
       "Microsoft.VisualBasic.Core.dll": "sha256-yqKfbt+FMK3YQWz8QzHuAFqxIxN5MxOW+R11ltXmIKE=",
       "Microsoft.VisualBasic.dll": "sha256-mIhR7vYCzg5aKYGk0F7p4UfbocIRqW2JzqN3I3ssbyU=",
@@ -197,11 +199,11 @@
       "mscorlib.dll": "sha256-i0zXLOX1XZekwNvRdQK9WDvRWKFggLp7KDCnvMrn+HQ=",
       "netstandard.dll": "sha256-4QNBIB4DMwj82CYd96oFrTh3fcrmyaDjtQ2dBTyWz7Q=",
       "System.Private.CoreLib.dll": "sha256-5Zk+rN+j5FbFEQJdT8YR2O0i6KWpvrERsaPZCv69DmI=",
-      "BlazorHousePriceApp.dll": "sha256-e0EENo11I0dP19gNjvbSc4+opbYr\/wsx3A0plXr\/zpI="
+      "BlazorHousePriceApp.dll": "sha256-jgs93nZGSqOsfKlriC3BLWkYdgdcoC6erG4Gx5M2MO0="
     },
     "lazyAssembly": null,
     "pdb": {
-      "BlazorHousePriceApp.pdb": "sha256-W3EJ6evbFIwsyOCzzIQu5aKD0PZT9bqLXZA5OYtxnpA="
+      "BlazorHousePriceApp.pdb": "sha256-ugdF\/NRovjs7UBx7OkC2CD1jRwHm1UtWbPCdNRrCqAc="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-2ldEe2K8ARFKSIBsv+Hr3iNQzq9qh1H\/dwdu2r+AIyY=",
