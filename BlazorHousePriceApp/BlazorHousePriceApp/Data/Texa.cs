@@ -13,7 +13,7 @@ namespace BlazorHousePriceApp.Data
         public double Price { get; set; }
         public double Bedrooms { get; set; }
         public double Bathrooms { get; set; }
-        [Required]
+        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
         public double SqftLiving { get; set; }
         public double SqftLot { get; set; }
         public double Floors { get; set; }

@@ -2556,3 +2556,5 @@ C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp
 C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\bin\Debug\net5.0\wwwroot\_framework\System.Linq.Dynamic.Core.dll
 C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\obj\Debug\net5.0\build-gz\GJ23eUPz.gz
 C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\obj\Debug\net5.0\build-gz\1eUm8t1b.gz
+C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\obj\Debug\net5.0\RazorDeclaration\Pages\TexasLatestStats.razor.g.cs
+C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\obj\Debug\net5.0\Razor\Pages\TexasLatestStats.razor.g.cs

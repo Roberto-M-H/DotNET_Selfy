@@ -118,7 +118,7 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\Shared\NavMenu.razor"
+#line 33 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
