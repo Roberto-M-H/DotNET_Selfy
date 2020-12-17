@@ -199,11 +199,11 @@
       "mscorlib.dll": "sha256-i0zXLOX1XZekwNvRdQK9WDvRWKFggLp7KDCnvMrn+HQ=",
       "netstandard.dll": "sha256-4QNBIB4DMwj82CYd96oFrTh3fcrmyaDjtQ2dBTyWz7Q=",
       "System.Private.CoreLib.dll": "sha256-5Zk+rN+j5FbFEQJdT8YR2O0i6KWpvrERsaPZCv69DmI=",
-      "BlazorHousePriceApp.dll": "sha256-5ufZCvcKsDuYbK8jFltsxuSxHzGh\/dU7XMyBYXqrdI0="
+      "BlazorHousePriceApp.dll": "sha256-kWPDcm3ig08m5bNf4R\/HczRVBBbRsJSG+JusXf75oR4="
     },
     "lazyAssembly": null,
     "pdb": {
-      "BlazorHousePriceApp.pdb": "sha256-Xhg+E3uyNNUc\/JVS6GEa+DLG8DsL43di3KYG+2d+lmM="
+      "BlazorHousePriceApp.pdb": "sha256-KAlf7GNryfZuCvxf8f\/GciDhhINsP0DsvT+KQG0VEbM="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-2ldEe2K8ARFKSIBsv+Hr3iNQzq9qh1H\/dwdu2r+AIyY=",

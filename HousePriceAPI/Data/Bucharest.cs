@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿#nullable disable
 
 namespace HousePriceAPI.Data
 {
-    public class Bucharest
+    public partial class Bucharest
     {
-        
-        public float Rooms { get; set; }
-        public float Surface { get; set; }
-        public float Location { get; set; }
-        public float Price { get; set; }
+        public double Rooms { get; set; }
+        public double Surface { get; set; }
+        public double Location { get; set; }
+        public double Price { get; set; }
     }
 }

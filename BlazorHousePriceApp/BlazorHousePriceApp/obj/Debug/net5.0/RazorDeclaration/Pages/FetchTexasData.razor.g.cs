@@ -13,104 +13,104 @@ namespace BlazorHousePriceApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 1 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 2 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 3 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 4 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 5 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 6 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 7 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 8 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 9 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using BlazorHousePriceApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 10 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using BlazorHousePriceApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 11 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using BlazorPro.Spinkit;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 12 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using System.Text.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 13 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Radzen;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
+#line 14 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\_Imports.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/texasdata")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/statisticsdata")]
     public partial class FetchTexasData : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -119,41 +119,27 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 73 "C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\Pages\FetchTexasData.razor"
+#line 43 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\Pages\FetchTexasData.razor"
        
-    private Texa[] houses;
+    private Statistics[] houses;
 
-    private string apiUrl = "http://localhost:5000/api/v1/Texas";
+    private string apiUrl = "http://localhost:5000/api/v1/statistica";
 
     protected override async Task OnInitializedAsync()
     {
-        houses = await Http.GetFromJsonAsync<Texa[]>(apiUrl);
+        houses = await Http.GetFromJsonAsync<Statistics[]>(apiUrl);
     }
 
-    public class Texa
+    public class Statistics
     {
-        public double Id { get; set; }
-        public string Date { get; set; }
-        public double Price { get; set; }
-        public double Bedrooms { get; set; }
-        public double Bathrooms { get; set; }
-        public double SqftLiving { get; set; }
-        public double SqftLot { get; set; }
-        public double Floors { get; set; }
-        public double Waterfront { get; set; }
-        public double View { get; set; }
-        public double Condition { get; set; }
-        public double Grade { get; set; }
-        public double SqftAbove { get; set; }
-        public double SqftBasement { get; set; }
-        public double YrBuilt { get; set; }
-        public double YrRenovated { get; set; }
-        public double Zipcode { get; set; }
-        public double Lat { get; set; }
-        public double Long { get; set; }
-        public double SqftLiving15 { get; set; }
-        public double SqftLot15 { get; set; }
-        public int PredictionId { get; set; }
+        public string NumeOras { get; set; }
+        public double? MediaPret { get; set; }
+        public double? MediaSuprafata { get; set; }
+        public double? MediaRating { get; set; }
+        public double? MaxPret { get; set; }
+        public double? MinPret { get; set; }
+        public DateTime DateOfStatistic { get; set; }
+
     }
 
 

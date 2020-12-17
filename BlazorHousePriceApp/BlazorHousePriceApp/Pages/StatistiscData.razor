@@ -1,0 +1,65 @@
+﻿@page "/statisticsdata"
+@inject HttpClient Http
+
+
+<h3>Statistics Data</h3>
+
+@if (houses == null)
+{
+    <Wave Size="70px" />
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Price</th>
+                <th>Grade</th>
+                <th>SqftLot</th>
+                <th>MaxPrice</th>
+                <th>MinPrice</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var house in houses)
+            {
+            <tr>
+                <th>@house.NumeOras</th>
+                <th>@house.MediaPret</th>
+                <th>@house.MediaRating</th>
+                <th>@house.MediaSuprafata</th>
+                <th>@house.MaxPret</th>
+                <th>@house.MinPret</th>
+                <th>@house.DateOfStatistic</th>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private Statistics[] houses;
+
+    private string apiUrl = "http://localhost:5000/api/v1/statistica";
+
+    protected override async Task OnInitializedAsync()
+    {
+        houses = await Http.GetFromJsonAsync<Statistics[]>(apiUrl);
+    }
+
+    public class Statistics
+    {
+        public string NumeOras { get; set; }
+        public double? MediaPret { get; set; }
+        public double? MediaSuprafata { get; set; }
+        public double? MediaRating { get; set; }
+        public double? MaxPret { get; set; }
+        public double? MinPret { get; set; }
+        public DateTime DateOfStatistic { get; set; }
+
+    }
+
+}

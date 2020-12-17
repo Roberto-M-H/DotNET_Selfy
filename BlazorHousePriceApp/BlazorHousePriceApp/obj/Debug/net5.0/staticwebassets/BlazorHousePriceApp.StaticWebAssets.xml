@@ -1,6 +1,6 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="C:\Users\Florentin\Documents\GitHub\.NET\BlazorHousePriceApp\BlazorHousePriceApp\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="_content/BlazorPro.Spinkit" Path="C:\Users\Florentin\.nuget\packages\blazorpro.spinkit\1.2.0\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\Florentin\.nuget\packages\radzen.blazor\2.18.6\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/BlazorPro.Spinkit" Path="C:\Users\Stefan\.nuget\packages\blazorpro.spinkit\1.2.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\Stefan\.nuget\packages\radzen.blazor\2.18.6\build\..\staticwebassets\" />
 </StaticWebAssets>

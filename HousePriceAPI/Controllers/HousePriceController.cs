@@ -38,6 +38,35 @@ namespace HousePriceAPI.Controllers
         }
     }
 
+    [Route("api/v1/statistica")]
+    [ApiController]
+    public class StatisticaController : ControllerBase
+    {
+        private readonly IMediator mediator;
+        public StatisticaController(IMediator mediator)
+        {
+
+            this.mediator = mediator;
+
+
+        }
+        [HttpGet]
+        public async Task<ActionResult<Statistica>> Get()
+        {
+            var fields = await mediator.Send(new GetStatistics());
+            if (fields == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(fields);
+        }
+
+
+
+
+    }
+
     [Route("api/v1/statistica/Texas")]
     [ApiController]
     public class TexasStatisticaController:ControllerBase

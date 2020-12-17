@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorHousePriceApp.Shared
+namespace BlazorHousePriceApp.Pages
 {
     #line hidden
     using System;
@@ -110,13 +110,43 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/statisticsdata")]
+    public partial class StatistiscData : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 43 "E:\.NET\BlazorHousePriceApp\BlazorHousePriceApp\Pages\StatistiscData.razor"
+       
+    private Statistics[] houses;
+
+    private string apiUrl = "http://localhost:5000/api/v1/statistica";
+
+    protected override async Task OnInitializedAsync()
+    {
+        houses = await Http.GetFromJsonAsync<Statistics[]>(apiUrl);
+    }
+
+    public class Statistics
+    {
+        public string NumeOras { get; set; }
+        public double? MediaPret { get; set; }
+        public double? MediaSuprafata { get; set; }
+        public double? MediaRating { get; set; }
+        public double? MaxPret { get; set; }
+        public double? MinPret { get; set; }
+        public DateTime DateOfStatistic { get; set; }
+
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591
