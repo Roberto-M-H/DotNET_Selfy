@@ -1,0 +1,299 @@
+﻿@page "/predicttexas"
+@inject HttpClient Http
+
+
+<h3>Predict House Price Texas</h3>
+
+<div class="col-12">
+    <h3><b>Enter House Information</b></h3>
+    <hr />
+
+    <EditForm Model="@house" OnValidSubmit="@PredictPrice">
+        <DataAnnotationsValidator/>
+        <ValidationSummary />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Id :</label>
+            <input type="number" class="form-control col-3" @bind="house.Id" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Date :</label>
+            <input type="text" class="form-control col-3" @bind="house.Date" placeholder="string" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Price :</label>
+            <input type="number" class="form-control col-3" @bind="house.Price" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Bedrooms :</label>
+            <input type="number" class="form-control col-3" @bind="house.Bedrooms" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Bathrooms :</label>
+            <input type="number" class="form-control col-3" @bind="house.Bathrooms" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftLiving :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftLiving" />
+            <ValidationMessage For="@(()=> house.SqftLiving)" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftLot :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftLot" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Floors :</label>
+            <input type="number" class="form-control col-3" @bind="house.Floors" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Waterfront :</label>
+            <input type="number" class="form-control col-3" @bind="house.Waterfront" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">View :</label>
+            <input type="number" class="form-control col-3" @bind="house.View" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Condition :</label>
+            <input type="number" class="form-control col-3" @bind="house.Condition" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Grade :</label>
+            <input type="number" class="form-control col-3" @bind="house.Grade" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftAbove :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftAbove" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftBasement :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftBasement" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">YrBuilt :</label>
+            <input type="number" class="form-control col-3" @bind="house.YrBuilt" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">YrRenovated :</label>
+            <input type="number" class="form-control col-3" @bind="house.YrRenovated" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Zipcode :</label>
+            <input type="number" class="form-control col-3" @bind="house.Zipcode" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Lat :</label>
+            <input type="number" class="form-control col-3" @bind="house.Lat" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Long :</label>
+            <input type="number" class="form-control col-3" @bind="house.Long" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftLiving15 :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftLiving15" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">SqftLot15 :</label>
+            <input type="number" class="form-control col-3" @bind="house.SqftLot15" />
+        </div>
+        <br />
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Asking Price in $USD :</label>
+            <input type="number" class="form-control col-3" @bind="askingPrice" required/>
+        </div>
+        <br />
+        <div class="col-12 row">
+            <span class="col-2"></span>
+            <input type="submit" class="form-control col-1 btn btn-primary" value="Predict" />
+        </div>
+    </EditForm>
+</div>
+
+
+
+@if (predictedPrice == null)
+{
+    <p><em>Please fill in the house data...</em></p>
+}
+else
+{
+    <h2>Price prediction : $@Math.Round(predictedPrice.Score, 2)</h2>
+    <h3>1 sq. ft.: @Math.Round(m2, 2);</h3>
+
+    @if (predictedPrice.Score - askingPrice > 0)
+    {
+        <h3>Underpriced by @Math.Round(Math.Abs(predictedPrice.Score - askingPrice), 2)</h3>
+    }
+    else
+    {
+        <h3>Overpriced by @Math.Round(Math.Abs(predictedPrice.Score - askingPrice), 2)</h3>
+    }
+
+    <select class="form-control selectpicker" @bind="choice">
+        <option>--select currency--</option>
+        @foreach (var item in converter.conversion_rates.GetType().GetProperties())
+        {
+            <option value="@item.GetValue(converter.conversion_rates, null)">@item.Name</option>
+        }
+
+    </select>
+
+    @if (choice == 0)
+    {
+        <h4>Please select your currency</h4>
+    }
+    else
+    {
+        <h4>Price in specified currency: @Math.Round((predictedPrice.Score*choice), 2)</h4>
+    }
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 p-4">
+            <RadzenChart>
+                <RadzenBarSeries Data="@blueChart" CategoryProperty="Text" Title="PredictedPrice/AverageTexasPrice" LineType="LineType.Dashed" ValueProperty="Value" />
+                <RadzenBarSeries Data="@greenChart" CategoryProperty="Text" Title="PredictedPrice/AskingPrice" ValueProperty="Value" />
+                <RadzenValueAxis>
+                    <RadzenGridLines Visible="true" />
+                    <RadzenAxisTitle Text="Visual Representation" />
+                </RadzenValueAxis>
+                <RadzenBarOptions Radius="5" />
+            </RadzenChart>
+        </div>
+    </div>
+
+}
+
+
+
+
+
+@code {
+
+    double choice = 0;
+
+    public Data.Texa house { get; set; }
+    public Prediction predictedPrice;
+    public Data.TexasStatistics stats;
+    public Data.CurrencyAPIResponse converter;
+
+    DataItem[] blueChart;
+    DataItem[] greenChart;
+
+    public double m2;
+    public double askingPrice;
+
+
+
+
+    string result;
+
+    public HttpResponseMessage response { get; set; }
+
+    private string apiUrl = "http://localhost:5000/api/v1/Texas";
+    private string conversionUrl = "https://v6.exchangerate-api.com/v6/6adc721f7fb5b27c1916c938/latest/USD";
+    private string apiStats = "http://localhost:5000/api/v1/statistica/Texas";
+
+    protected async override Task OnInitializedAsync()
+    {
+        house = new Data.Texa();
+        converter = await Http.GetFromJsonAsync<Data.CurrencyAPIResponse>(conversionUrl);
+
+        stats = await Http.GetFromJsonAsync<Data.TexasStatistics>(apiStats);
+
+    }
+
+    private async Task PredictPrice()
+
+    {
+        predictedPrice = null;
+        response = await Http.PostAsJsonAsync(apiUrl, house);
+        result = response.Content.ReadAsStringAsync().Result;
+        predictedPrice = JsonSerializer.Deserialize<Prediction>(result);
+
+        blueChart = new DataItem[]
+        {
+        new DataItem
+        {
+            Text = "AvgPrice",
+            Value = stats.price
+        },
+        new DataItem
+        {
+            Text = "PredictedPrice",
+            Value = predictedPrice.Score
+        }
+            };
+        greenChart = new DataItem[]
+        {
+            new DataItem
+        {
+            Text = "AskingPrice",
+            Value = askingPrice
+        },
+        new DataItem
+        {
+            Text = "PredictedPrice",
+            Value = predictedPrice.Score
+        }
+        
+            };
+
+        m2 = predictedPrice.Score / house.SqftLiving;
+        house = new Data.Texa();
+
+    }
+
+
+    /*
+
+    var httpclient = new HttpClient();
+            var response = await httpclient.GetAsync(apiUrl);
+            string responseAsString = response.Content.ReadAsStringAsync().Result;
+            var statistics = System.Text.Json.JsonSerializer.Deserialize<TexasStatistics>(responseAsString);
+
+
+    */
+
+
+
+    
+
+    public class Prediction
+    {
+        public double Score { get; set; }
+    }
+
+
+    class DataItem
+    {
+        public string Text { get; set; }
+        public double Value { get; set; }
+
+    }
+
+
+
+
+
+}
