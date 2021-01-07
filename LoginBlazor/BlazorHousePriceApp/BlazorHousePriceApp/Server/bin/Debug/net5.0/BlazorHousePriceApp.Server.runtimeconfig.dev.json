@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Florentin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Florentin\\.nuget\\packages"
+    ]
+  }
+}
