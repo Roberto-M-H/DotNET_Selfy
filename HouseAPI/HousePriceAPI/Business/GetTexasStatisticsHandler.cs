@@ -20,12 +20,12 @@ namespace HousePriceAPI.Business
         {
             var fields = await this.context.Texas
                                     .Select(p => new { p.Price, p.Grade, p.SqftLot }).ToListAsync();
-            var mediaPreturi = fields.Select(p => p.Price).Average();
+            var Priceuri = fields.Select(p => p.Price).Average();
             var mediaGrades = fields.Select(p => p.Grade).Average();
             var mediaArea = fields.Select(p => p.SqftLot).Average();
             var maximPrice = fields.Select(p => p.Price).Max();
             var minimPrice = fields.Select(p => p.Price).Min();
-            return new TexasStatistics { price = mediaPreturi, grade = mediaGrades, sqftLot = mediaArea, maxPrice = maximPrice, minPrice = minimPrice  };
+            return new TexasStatistics { price = Priceuri, grade = mediaGrades, sqftLot = mediaArea, maxPrice = maximPrice, minPrice = minimPrice  };
 
             
 

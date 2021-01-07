@@ -38,12 +38,12 @@ namespace HousePriceAPI.Controllers
         }
     }
 
-    [Route("api/v1/statistica")]
+    [Route("api/v1/statistics")]
     [ApiController]
-    public class StatisticaController : ControllerBase
+    public class StatisticsController : ControllerBase
     {
         private readonly IMediator mediator;
-        public StatisticaController(IMediator mediator)
+        public StatisticsController(IMediator mediator)
         {
 
             this.mediator = mediator;
@@ -51,7 +51,7 @@ namespace HousePriceAPI.Controllers
 
         }
         [HttpGet]
-        public async Task<ActionResult<Statistica>> Get()
+        public async Task<ActionResult<Statistics>> Get()
         {
             var fields = await mediator.Send(new GetStatistics());
             if (fields == null)
@@ -67,12 +67,12 @@ namespace HousePriceAPI.Controllers
 
     }
 
-    [Route("api/v1/statistica/Texas")]
+    [Route("api/v1/statistics/Texas")]
     [ApiController]
-    public class TexasStatisticaController:ControllerBase
+    public class TexasStatisticsController:ControllerBase
     {
         private readonly IMediator mediator;
-        public TexasStatisticaController( IMediator mediator)
+        public TexasStatisticsController( IMediator mediator)
         {
          
             this.mediator = mediator;

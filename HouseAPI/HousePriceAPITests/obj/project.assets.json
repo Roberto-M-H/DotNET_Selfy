@@ -10073,20 +10073,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Florentin\\.nuget\\packages\\": {}
+    "C:\\Users\\Stefan\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj",
+      "projectUniqueName": "E:\\.NET\\HouseAPI\\HousePriceAPITests\\HousePriceAPITests.csproj",
       "projectName": "HousePriceAPITests",
-      "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPITests\\HousePriceAPITests.csproj",
-      "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPITests\\obj\\",
+      "projectPath": "E:\\.NET\\HouseAPI\\HousePriceAPITests\\HousePriceAPITests.csproj",
+      "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
+      "outputPath": "E:\\.NET\\HouseAPI\\HousePriceAPITests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -10099,11 +10104,11 @@
         "net5.0": {
           "targetAlias": "netcoreapp5.0",
           "projectReferences": {
-            "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
-              "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj"
+            "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj": {
+              "projectPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\BlazorHousePriceApp.csproj"
             },
-            "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj": {
-              "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HousePriceAPI\\HousePriceAPI.csproj"
+            "E:\\.NET\\HouseAPI\\HousePriceAPI\\HousePriceAPI.csproj": {
+              "projectPath": "E:\\.NET\\HouseAPI\\HousePriceAPI\\HousePriceAPI.csproj"
             }
           }
         }

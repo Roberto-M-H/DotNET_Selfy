@@ -4,7 +4,7 @@ using MediatR;
 
 namespace HousePriceAPI.DTOs
 {
-    public class GetStatistics : IRequest<List<Statistica>>
+    public class GetStatistics : IRequest<List<Statistics>>
     {
     }
 }

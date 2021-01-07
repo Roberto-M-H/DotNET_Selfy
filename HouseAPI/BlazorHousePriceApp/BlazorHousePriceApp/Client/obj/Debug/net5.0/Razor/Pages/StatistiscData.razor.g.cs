@@ -193,7 +193,7 @@ else
             __builder.AddContent(9, 
 #nullable restore
 #line 35 "C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
-                         house.NumeOras
+                         house.City
 
 #line default
 #line hidden
@@ -205,7 +205,7 @@ else
             __builder.AddContent(12, 
 #nullable restore
 #line 36 "C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
-                         house.MediaPret
+                         house.Price
 
 #line default
 #line hidden
@@ -217,7 +217,7 @@ else
             __builder.AddContent(15, 
 #nullable restore
 #line 37 "C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
-                         house.MediaRating
+                         house.Grade
 
 #line default
 #line hidden
@@ -229,7 +229,7 @@ else
             __builder.AddContent(18, 
 #nullable restore
 #line 38 "C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
-                         house.MediaSuprafata
+                         house.SqftLot
 
 #line default
 #line hidden
@@ -241,7 +241,7 @@ else
             __builder.AddContent(21, 
 #nullable restore
 #line 39 "C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
-                         house.MaxPret
+                         house.MaxPrice
 
 #line default
 #line hidden
@@ -253,7 +253,7 @@ else
             __builder.AddContent(24, 
 #nullable restore
 #line 40 "C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
-                         house.MinPret
+                         house.MinPrice
 
 #line default
 #line hidden
@@ -312,7 +312,7 @@ else
 #line default
 #line hidden
 #nullable disable
-                , 40, "MediaPret", 41, (__builder3) => {
+                , 40, "Price", 41, (__builder3) => {
                     __builder3.OpenComponent<Radzen.Blazor.RadzenMarkers>(42);
                     __builder3.AddAttribute(43, "MarkerType", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Radzen.Blazor.MarkerType>(
 #nullable restore
@@ -369,7 +369,7 @@ else
         /*
         foreach (var house in houses)
         {
-            if (String.Equals(house.NumeOras, "Singapore") == true)
+            if (String.Equals(house.City, "Singapore") == true)
             {
                 texas_houses.Append<Statistics>(house);
             }
@@ -379,12 +379,12 @@ else
 
     public class Statistics
     {
-        public string NumeOras { get; set; }
-        public double? MediaPret { get; set; }
-        public double? MediaSuprafata { get; set; }
-        public double? MediaRating { get; set; }
-        public double? MaxPret { get; set; }
-        public double? MinPret { get; set; }
+        public string City { get; set; }
+        public double? Price { get; set; }
+        public double? SqftLot { get; set; }
+        public double? Grade { get; set; }
+        public double? MaxPrice { get; set; }
+        public double? MinPrice { get; set; }
         public string DateOfStatistic { get; set; }
 
     }

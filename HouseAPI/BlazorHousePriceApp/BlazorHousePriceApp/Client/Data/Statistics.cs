@@ -7,12 +7,12 @@ namespace BlazorHousePriceApp.Data
 {
     public class Statistics
     {
-        public string NumeOras { get; set; }
-        public double? MediaPret { get; set; }
-        public double? MediaSuprafata { get; set; }
-        public double? MediaRating { get; set; }
-        public double? MaxPret { get; set; }
-        public double? MinPret { get; set; }
+        public string City { get; set; }
+        public double? Price { get; set; }
+        public double? SqftLot { get; set; }
+        public double? Grade { get; set; }
+        public double? MaxPrice { get; set; }
+        public double? MinPrice { get; set; }
         public DateTime DateOfStatistic { get; set; }
     }
 }

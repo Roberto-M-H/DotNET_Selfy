@@ -204,13 +204,13 @@
       "mscorlib.dll": "sha256-i0zXLOX1XZekwNvRdQK9WDvRWKFggLp7KDCnvMrn+HQ=",
       "netstandard.dll": "sha256-4QNBIB4DMwj82CYd96oFrTh3fcrmyaDjtQ2dBTyWz7Q=",
       "System.Private.CoreLib.dll": "sha256-5Zk+rN+j5FbFEQJdT8YR2O0i6KWpvrERsaPZCv69DmI=",
-      "BlazorHousePriceApp.Shared.dll": "sha256-OA0qw7JF00ocAXp5e3ejLqm+2FfhH4QbLdqd0j+I+Z4=",
-      "BlazorHousePriceApp.Client.dll": "sha256-klC1P6mSYk6PWiVGymtM7pIkhTmSw6S9BBAaiWiz8Pc="
+      "BlazorHousePriceApp.Shared.dll": "sha256-0XUASbVgk\/XWTWDNxSmE1xx3frE7gQqWqtluN1cFwb0=",
+      "BlazorHousePriceApp.Client.dll": "sha256-bw5Ia9OAxr6aMERJ6uhZIILniEU\/S157ts1aHVZYFb4="
     },
     "lazyAssembly": null,
     "pdb": {
-      "BlazorHousePriceApp.Shared.pdb": "sha256-WxbIGE80pxPVe8XclV1oCQQZl5hyYEqroPzZG7eux2Y=",
-      "BlazorHousePriceApp.Client.pdb": "sha256-Kt8Ox6cXPFfcQKbbpwdwz8Nb\/BPRqYQUsH99lNAVaPc="
+      "BlazorHousePriceApp.Shared.pdb": "sha256-GrIMfR4y0AjygLMCL+S+PXEkKAg1CWn4sOR\/T1+DQCw=",
+      "BlazorHousePriceApp.Client.pdb": "sha256-yyqGcWjFQqzpY+E3mTaaSfdI8Zp3RbN+CH65sZEXB0s="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-2ldEe2K8ARFKSIBsv+Hr3iNQzq9qh1H\/dwdu2r+AIyY=",

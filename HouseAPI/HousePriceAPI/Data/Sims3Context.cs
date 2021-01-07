@@ -18,7 +18,7 @@ namespace HousePriceAPI.Data
         }
 
         public virtual DbSet<Bucharest> Bucharests { get; set; }
-        public virtual DbSet<Statistica> Statistics { get; set; }
+        public virtual DbSet<Statistics> Statistics { get; set; }
         public virtual DbSet<Texa> Texas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -42,7 +42,7 @@ namespace HousePriceAPI.Data
                 entity.ToTable("Bucharest");
             });
 
-            modelBuilder.Entity<Statistica>(entity =>
+            modelBuilder.Entity<Statistics>(entity =>
             {
                 entity.HasNoKey();
 
@@ -52,17 +52,17 @@ namespace HousePriceAPI.Data
                     .HasColumnType("date")
                     .HasColumnName("date_of_statistic");
 
-                entity.Property(e => e.MaxPret).HasColumnName("max_pret");
+                entity.Property(e => e.MaxPrice).HasColumnName("max_pret");
 
-                entity.Property(e => e.MediaPret).HasColumnName("media_pret");
+                entity.Property(e => e.Price).HasColumnName("media_pret");
 
-                entity.Property(e => e.MediaRating).HasColumnName("media_rating");
+                entity.Property(e => e.Grade).HasColumnName("media_rating");
 
-                entity.Property(e => e.MediaSuprafata).HasColumnName("media_suprafata");
+                entity.Property(e => e.SqftLot).HasColumnName("media_suprafata");
 
-                entity.Property(e => e.MinPret).HasColumnName("min_pret");
+                entity.Property(e => e.MinPrice).HasColumnName("min_pret");
 
-                entity.Property(e => e.NumeOras)
+                entity.Property(e => e.City)
                     .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false)

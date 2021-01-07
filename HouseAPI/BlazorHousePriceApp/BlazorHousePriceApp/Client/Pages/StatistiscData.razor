@@ -32,12 +32,12 @@ else
             @foreach (var house in houses)
             {
                 <tr>
-                    <th>@house.NumeOras</th>
-                    <th>@house.MediaPret</th>
-                    <th>@house.MediaRating</th>
-                    <th>@house.MediaSuprafata</th>
-                    <th>@house.MaxPret</th>
-                    <th>@house.MinPret</th>
+                    <th>@house.City</th>
+                    <th>@house.Price</th>
+                    <th>@house.Grade</th>
+                    <th>@house.SqftLot</th>
+                    <th>@house.MaxPrice</th>
+                    <th>@house.MinPrice</th>
                     <th>@house.DateOfStatistic</th>
                 </tr>
             }
@@ -48,7 +48,7 @@ else
         <div class="col-md-12 col-sm-12 p-4">
             
             <RadzenChart>
-                <RadzenLineSeries Smooth="false" Data="@houses" CategoryProperty="DateOfStatistic" Title="Chart1" LineType="LineType.Dashed" ValueProperty="MediaPret">
+                <RadzenLineSeries Smooth="false" Data="@houses" CategoryProperty="DateOfStatistic" Title="Chart1" LineType="LineType.Dashed" ValueProperty="Price">
                     <RadzenMarkers MarkerType="MarkerType.Square" />
                 </RadzenLineSeries>
                 
@@ -74,7 +74,7 @@ else
         /*
         foreach (var house in houses)
         {
-            if (String.Equals(house.NumeOras, "Singapore") == true)
+            if (String.Equals(house.City, "Singapore") == true)
             {
                 texas_houses.Append<Statistics>(house);
             }
@@ -84,12 +84,12 @@ else
 
     public class Statistics
     {
-        public string NumeOras { get; set; }
-        public double? MediaPret { get; set; }
-        public double? MediaSuprafata { get; set; }
-        public double? MediaRating { get; set; }
-        public double? MaxPret { get; set; }
-        public double? MinPret { get; set; }
+        public string City { get; set; }
+        public double? Price { get; set; }
+        public double? SqftLot { get; set; }
+        public double? Grade { get; set; }
+        public double? MaxPrice { get; set; }
+        public double? MinPrice { get; set; }
         public string DateOfStatistic { get; set; }
 
     }

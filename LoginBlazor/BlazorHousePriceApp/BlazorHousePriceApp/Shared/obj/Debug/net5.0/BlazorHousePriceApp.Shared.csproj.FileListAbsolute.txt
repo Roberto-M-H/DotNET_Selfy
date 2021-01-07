@@ -10,3 +10,15 @@ C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Sh
 C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\ref\BlazorHousePriceApp.Shared.dll
 C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.pdb
 C:\Users\Florentin\Desktop\NET\Curs12\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.csprojAssemblyReference.cache
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\bin\Debug\net5.0\BlazorHousePriceApp.Shared.deps.json
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\bin\Debug\net5.0\BlazorHousePriceApp.Shared.dll
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\bin\Debug\net5.0\ref\BlazorHousePriceApp.Shared.dll
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\bin\Debug\net5.0\BlazorHousePriceApp.Shared.pdb
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.csprojAssemblyReference.cache
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.AssemblyInfoInputs.cache
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.AssemblyInfo.cs
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.csproj.CoreCompileInputs.cache
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.dll
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\ref\BlazorHousePriceApp.Shared.dll
+E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.pdb
