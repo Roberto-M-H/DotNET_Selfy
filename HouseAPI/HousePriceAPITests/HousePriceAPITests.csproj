@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BlazorHousePriceApp\BlazorHousePriceApp\BlazorHousePriceApp.csproj" />
     <ProjectReference Include="..\HousePriceAPI\HousePriceAPI.csproj" />
   </ItemGroup>
 

@@ -1,0 +1,75 @@
+﻿@page "/melbournelateststats"
+@inject HttpClient Http
+
+<h3>Melbourne Latest Stats</h3>
+@if (stats == null)
+{
+    <Wave Size="70px" />
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Price</th>
+                <th>MaxPrice</th>
+                <th>MinPrice</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+
+                <th>@stats.price</th>
+                <th>@stats.maxPrice</th>
+                <th>@stats.minPrice</th>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12 p-4">
+            <h2>Average Price</h2>
+            <RadzenRadialGauge Style="width: 100%; height: 300px;">
+                <RadzenRadialGaugeScale StartAngle="-150" EndAngle="150" Step="20" Min="0" Max="stats.maxPrice/10000" TickPosition=GaugeTickPosition.Inside>
+                    <RadzenRadialGaugeScalePointer Value=@((int)stats.price/10000) Length="0.6" ShowValue=true>
+                        <Template Context="pointer">
+                            <h4>
+                                @pointer.Value <sup>* 10,000$</sup>
+                            </h4>
+                        </Template>
+                    </RadzenRadialGaugeScalePointer>
+                    <RadzenRadialGaugeScaleRange From="0" To="(int)stats.maxPrice/30000" Fill="green" />
+                    <RadzenRadialGaugeScaleRange From="(int)stats.maxPrice/30000" To="(int)stats.maxPrice/15000" Fill="orange" />
+                    <RadzenRadialGaugeScaleRange From="(int)stats.maxPrice/15000" To="(int)stats.maxPrice/10000" Fill="red" />
+                </RadzenRadialGaugeScale>
+            </RadzenRadialGauge>
+        </div>
+    </div>
+
+}
+
+
+
+@code {
+
+    private MelbourneStatistics stats;
+
+    private string apiUrl = "http://localhost:5000/api/v1/statistics/Melbourne";
+
+    protected override async Task OnInitializedAsync()
+    {
+        stats = await Http.GetFromJsonAsync<MelbourneStatistics>(apiUrl);
+    }
+
+    public class MelbourneStatistics
+    {
+
+        public double price { get; set; }
+        public double maxPrice { get; set; }
+        public double minPrice { get; set; }
+
+    }
+
+}

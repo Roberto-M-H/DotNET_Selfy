@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HousePriceAPI", "HousePrice
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HousePriceAPITests", "..\HousePriceAPITests\HousePriceAPITests.csproj", "{8FE61997-75D8-40CE-9DBA-56F62767D53C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorHousePriceApp", "..\BlazorHousePriceApp\BlazorHousePriceApp\BlazorHousePriceApp.csproj", "{11B3593E-51B4-4853-90A2-A52ADA087BAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HousePriceAPI.IntegrationTests", "..\HousePriceAPI.IntegrationTests\HousePriceAPI.IntegrationTests.csproj", "{43541CA9-504F-4748-A5EE-F73737B8CCC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorHousePriceApp.UnitTests", "..\BlazorHousePriceApp.UnitTests\BlazorHousePriceApp.UnitTests.csproj", "{5ACDCB3A-CADF-4F0E-963F-4B267AE09B34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorHousePriceApp.Shared", "..\BlazorHousePriceApp\BlazorHousePriceApp\Shared\BlazorHousePriceApp.Shared.csproj", "{1D8F14EB-9A72-4521-912B-34541C816CF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HousePriceAPI.IntegrationTests", "..\HousePriceAPI.IntegrationTests\HousePriceAPI.IntegrationTests.csproj", "{43541CA9-504F-4748-A5EE-F73737B8CCC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorHousePriceApp.Server", "..\BlazorHousePriceApp\BlazorHousePriceApp\Server\BlazorHousePriceApp.Server.csproj", "{ADBBDD31-1F50-49FA-91DF-B52E3CBD2405}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorHousePriceApp.Client", "..\BlazorHousePriceApp\BlazorHousePriceApp\Client\BlazorHousePriceApp.Client.csproj", "{CCDEB841-B973-4576-AD35-7ADA0C661015}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,18 +29,22 @@ Global
 		{8FE61997-75D8-40CE-9DBA-56F62767D53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FE61997-75D8-40CE-9DBA-56F62767D53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FE61997-75D8-40CE-9DBA-56F62767D53C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11B3593E-51B4-4853-90A2-A52ADA087BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11B3593E-51B4-4853-90A2-A52ADA087BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11B3593E-51B4-4853-90A2-A52ADA087BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11B3593E-51B4-4853-90A2-A52ADA087BAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5ACDCB3A-CADF-4F0E-963F-4B267AE09B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5ACDCB3A-CADF-4F0E-963F-4B267AE09B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5ACDCB3A-CADF-4F0E-963F-4B267AE09B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5ACDCB3A-CADF-4F0E-963F-4B267AE09B34}.Release|Any CPU.Build.0 = Release|Any CPU
 		{43541CA9-504F-4748-A5EE-F73737B8CCC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{43541CA9-504F-4748-A5EE-F73737B8CCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43541CA9-504F-4748-A5EE-F73737B8CCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43541CA9-504F-4748-A5EE-F73737B8CCC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D8F14EB-9A72-4521-912B-34541C816CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8F14EB-9A72-4521-912B-34541C816CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8F14EB-9A72-4521-912B-34541C816CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8F14EB-9A72-4521-912B-34541C816CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADBBDD31-1F50-49FA-91DF-B52E3CBD2405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBBDD31-1F50-49FA-91DF-B52E3CBD2405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBBDD31-1F50-49FA-91DF-B52E3CBD2405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBBDD31-1F50-49FA-91DF-B52E3CBD2405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCDEB841-B973-4576-AD35-7ADA0C661015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDEB841-B973-4576-AD35-7ADA0C661015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDEB841-B973-4576-AD35-7ADA0C661015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDEB841-B973-4576-AD35-7ADA0C661015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

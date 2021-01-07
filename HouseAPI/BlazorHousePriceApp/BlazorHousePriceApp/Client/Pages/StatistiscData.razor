@@ -8,7 +8,7 @@
 @inject HttpClient Http
 
 
-<h3>Statistics Data</h3>
+<h1>Charts</h1>
 
 @if (houses == null)
 {
@@ -43,55 +43,6 @@ else
             }
         </tbody>
     </table>
-
-    <div class="row">
-        <div class="col-md-12 col-sm-12 p-4">
-            
-            <RadzenChart>
-                <RadzenLineSeries Smooth="false" Data="@houses" CategoryProperty="DateOfStatistic" Title="Chart1" LineType="LineType.Dashed" ValueProperty="Price">
-                    <RadzenMarkers MarkerType="MarkerType.Square" />
-                </RadzenLineSeries>
-                
-                <RadzenCategoryAxis Padding="30" FormatString="{0:DDD}" />
-                
-            </RadzenChart>
-        </div>
-    </div>
-}
-
-
-@code {
-
-
-    private Statistics[] houses;
-    private Statistics[] texas_houses;
-
-    private string apiUrl = "http://localhost:5000/api/v1/statistica";
-
-    protected override async Task OnInitializedAsync()
-    {
-        houses = await Http.GetFromJsonAsync<Statistics[]>(apiUrl);
-        /*
-        foreach (var house in houses)
-        {
-            if (String.Equals(house.City, "Singapore") == true)
-            {
-                texas_houses.Append<Statistics>(house);
-            }
-        }
-        */
-    }
-
-    public class Statistics
-    {
-        public string City { get; set; }
-        public double? Price { get; set; }
-        public double? SqftLot { get; set; }
-        public double? Grade { get; set; }
-        public double? MaxPrice { get; set; }
-        public double? MinPrice { get; set; }
-        public string DateOfStatistic { get; set; }
-
-    }
-
+    <Line Data="Cities" Config="config" />
+    //<Line Data="Singapore" Config="configTexas" />
 }

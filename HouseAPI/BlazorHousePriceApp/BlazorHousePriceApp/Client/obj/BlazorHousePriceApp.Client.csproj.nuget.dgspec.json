@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj": {}
+    "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj": {
+    "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj",
+        "projectUniqueName": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj",
         "projectName": "BlazorHousePriceApp.Client",
-        "projectPath": "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj",
-        "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\obj\\",
+        "projectPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj",
+        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
+        "outputPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -28,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj": {
-                "projectPath": "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj"
+              "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj": {
+                "projectPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj"
               }
             }
           }
@@ -108,18 +112,22 @@
         }
       }
     },
-    "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj": {
+    "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj",
+        "projectUniqueName": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj",
         "projectName": "BlazorHousePriceApp.Shared",
-        "projectPath": "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj",
-        "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Florentin\\Desktop\\NET\\Curs12\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\obj\\",
+        "projectPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
+        "outputPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
