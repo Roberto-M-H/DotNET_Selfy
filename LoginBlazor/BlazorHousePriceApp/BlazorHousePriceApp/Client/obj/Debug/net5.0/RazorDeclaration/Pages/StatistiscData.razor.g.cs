@@ -13,140 +13,140 @@ namespace BlazorHousePriceApp.Client.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 1 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 2 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 3 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 4 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 5 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 6 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 7 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 8 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 9 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 10 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using BlazorHousePriceApp.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 11 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using BlazorHousePriceApp.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 12 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using BlazorPro.Spinkit;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 13 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using System.Text.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 14 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using Radzen;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 15 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 16 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
+#line 16 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\_Imports.razor"
 using AntDesign.Charts;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
+#line 2 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
+#line 3 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
+#line 4 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
 using BlazorHousePriceApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
+#line 6 "C:\Users\Florentin\Documents\GitHub\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
            [Authorize]
 
 #line default
@@ -160,46 +160,6 @@ using BlazorHousePriceApp.Shared;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 63 "E:\.NET\LoginBlazor\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\StatistiscData.razor"
-       
-
-
-    private Statistics[] houses;
-    private Statistics[] texas_houses;
-
-    private string apiUrl = "http://localhost:5000/api/v1/statistics";
-
-    protected override async Task OnInitializedAsync()
-    {
-        houses = await Http.GetFromJsonAsync<Statistics[]>(apiUrl);
-        /*
-        foreach (var house in houses)
-        {
-            if (String.Equals(house.NumeOras, "Singapore") == true)
-            {
-                texas_houses.Append<Statistics>(house);
-            }
-        }
-        */
-    }
-
-    public class Statistics
-    {
-        public string City { get; set; }
-        public double? Price { get; set; }
-        public double? SqftLot { get; set; }
-        public double? Grade { get; set; }
-        public double? MaxPrice { get; set; }
-        public double? MinPrice { get; set; }
-        public DateTime DateOfStatistic { get; set; }
-
-    }
-
-
-#line default
-#line hidden
-#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }

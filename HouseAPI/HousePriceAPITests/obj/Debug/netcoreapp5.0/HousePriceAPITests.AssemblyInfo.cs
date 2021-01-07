@@ -11,8 +11,9 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("BlazorHousePriceApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp", "BlazorHousePriceApp.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("HousePriceAPI, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "E:\\.NET\\HouseAPI\\HousePriceAPI", "HousePriceAPI.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("BlazorHousePriceApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHouse" +
+    "PriceApp", "BlazorHousePriceApp.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("HousePriceAPI, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\HousePriceAPI", "HousePriceAPI.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("HousePriceAPITests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

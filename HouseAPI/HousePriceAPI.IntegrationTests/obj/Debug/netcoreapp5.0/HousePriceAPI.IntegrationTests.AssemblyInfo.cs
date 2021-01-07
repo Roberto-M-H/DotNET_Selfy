@@ -11,7 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("HousePriceAPI, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "E:\\.NET\\HouseAPI\\HousePriceAPI", "HousePriceAPI.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("HousePriceAPI, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\HousePriceAPI", "HousePriceAPI.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("HousePriceAPI.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
