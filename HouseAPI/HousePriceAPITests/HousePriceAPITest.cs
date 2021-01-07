@@ -8,7 +8,7 @@ namespace HousePriceAPITests
     [TestClass]
     public class StatisticsTest
     {
-        private string apiUrl = "http://localhost:5000/api/v1/statistica/Texas";
+        private string apiUrl = "http://localhost:5000/api/v1/statistics/Texas";
         [TestMethod]
         public async System.Threading.Tasks.Task IsGradeinRange()
         {
@@ -114,10 +114,49 @@ namespace HousePriceAPITests
             //Act
             var response = await httpclient.PostAsync(apiUrl, houseJSON);
             string responseAsString = response.Content.ReadAsStringAsync().Result;
-           // var predictedPrice = System.Text.Json.JsonSerializer.Deserialize<Prediction>(responseAsString);
+
+
+            var predictedPrice = System.Text.Json.JsonSerializer.Deserialize<Prediction>(responseAsString);
             //Assert
-           // Assert.IsTrue(predictedPrice.Score > 0, "The predicted price was not greater than zero.");
+            Assert.IsTrue(predictedPrice.Score > 0, "The predicted price was not greater than zero.");
         }
     }
+    public class Prediction
+    {
+        public double Score { get; set; }
+    }
+    [TestClass]
+    public class PredictionTestMB
+    {
+        //Arrange
+        private string apiUrl = "http://localhost:5000/api/v1/Melbourne";
+        [TestMethod]
+        public async System.Threading.Tasks.Task IsPredictionGreaterThanZeroAsync()
+        {
+            var house = new HousePriceAPI.Data.Melbourne()
+            {
+                Rooms = 3,
+                Price = 1912000,
+                Distance = 9.7,
+                Postcode = "3103",
+                Bedroom2 = "2",
+                Bathroom = 1,
+                Landsize = 844,
+                BuildingArea = 0,
+                YearBuilt = 0,
+                CouncilArea = "Boroondara City Council",
+                Regionname = "Southern Metropolitan",
+            };
+            var houseJSON = new StringContent(JsonConvert.SerializeObject(house), Encoding.UTF8, "application/json");
+            var httpclient = new HttpClient();
+            //Act
+            var response = await httpclient.PostAsync(apiUrl, houseJSON);
+            string responseAsString = response.Content.ReadAsStringAsync().Result;
 
+            System.Console.WriteLine(responseAsString);
+            var predictedPrice = System.Text.Json.JsonSerializer.Deserialize<Prediction>(responseAsString);
+            //Assert
+            Assert.IsTrue(predictedPrice.Score > 0, "The predicted price was not greater than zero.");
+        }
+    }
 }

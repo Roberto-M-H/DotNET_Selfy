@@ -21,7 +21,7 @@ namespace HousePriceAPI.IntegrationTests
         [Fact] 
         public async Task Get_Should_Retrieve_Texas_Statistics() 
         { 
-            var response = await _client.GetAsync("http://localhost:5000/api/v1/statistica/Texas");
+            var response = await _client.GetAsync("http://localhost:5000/api/v1/statistics/Texas");
             response.StatusCode.Should().Be(HttpStatusCode.OK);
 
             var stats = JsonConvert.DeserializeObject<Data.TexasStatistics[]>(await response.Content.ReadAsStringAsync());
