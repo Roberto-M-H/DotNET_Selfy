@@ -124,34 +124,6 @@ using AntDesign.Charts;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\PredictHousePriceMelbourne.razor"
-using Microsoft.AspNetCore.Authorization;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\PredictHousePriceMelbourne.razor"
-using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\PredictHousePriceMelbourne.razor"
-using BlazorHousePriceApp.Shared;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 5 "E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\PredictHousePriceMelbourne.razor"
-           [Authorize]
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/predictmelbourne")]
     public partial class PredictHousePriceMelbourne : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -161,21 +133,99 @@ using BlazorHousePriceApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 41 "E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\PredictHousePriceMelbourne.razor"
+#line 140 "E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\PredictHousePriceMelbourne.razor"
        
-    private WeatherForecast[] forecasts;
 
-    protected override async Task OnInitializedAsync()
+    double choice = 0;
+
+    public Data.Melbourne house { get; set; }
+    public Prediction predictedPrice;
+    public Data.MelbourneStatistics stats;
+    public Data.CurrencyAPIResponse converter;
+
+    DataItem[] blueChart;
+    DataItem[] greenChart;
+
+    public double m2;
+    public double askingPrice;
+
+
+
+
+    string result;
+
+    public HttpResponseMessage response { get; set; }
+
+    private string apiUrl = "http://localhost:5000/api/v1/Melbourne";
+    private string conversionUrl = "https://v6.exchangerate-api.com/v6/6adc721f7fb5b27c1916c938/latest/USD";
+    private string apiStats = "http://localhost:5000/api/v1/statistics/Melbourne";
+
+    protected async override Task OnInitializedAsync()
     {
-        try
-        {
-            forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
-        }
-        catch (AccessTokenNotAvailableException exception)
-        {
-            exception.Redirect();
-        }
+        house = new Data.Melbourne();
+        converter = await Http.GetFromJsonAsync<Data.CurrencyAPIResponse>(conversionUrl);
+
+        stats = await Http.GetFromJsonAsync<Data.MelbourneStatistics>(apiStats);
+
     }
+
+    private async Task PredictPrice()
+
+    {
+        predictedPrice = null;
+        response = await Http.PostAsJsonAsync(apiUrl, house);
+        result = response.Content.ReadAsStringAsync().Result;
+        predictedPrice = JsonSerializer.Deserialize<Prediction>(result);
+
+        blueChart = new DataItem[]
+        {
+        new DataItem
+        {
+            Text = "AvgPrice",
+            Value = stats.price
+        },
+        new DataItem
+        {
+            Text = "PredictedPrice",
+            Value = predictedPrice.Score
+        }
+                };
+        greenChart = new DataItem[]
+        {
+            new DataItem
+        {
+            Text = "AskingPrice",
+            Value = askingPrice
+        },
+        new DataItem
+        {
+            Text = "PredictedPrice",
+            Value = predictedPrice.Score
+        }
+
+                };
+
+        m2 = predictedPrice.Score / house.Landsize;
+        house = new Data.Melbourne();
+
+    }
+
+    public class Prediction
+    {
+        public double Score { get; set; }
+    }
+
+
+    class DataItem
+    {
+        public string Text { get; set; }
+        public double Value { get; set; }
+
+    }
+
+
+
+
 
 
 #line default

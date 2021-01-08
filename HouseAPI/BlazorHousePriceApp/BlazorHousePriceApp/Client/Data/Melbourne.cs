@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-#nullable disable
-
-namespace HousePriceAPI.Data
+namespace BlazorHousePriceApp.Data
 {
     public partial class Melbourne
     {
@@ -13,7 +11,8 @@ namespace HousePriceAPI.Data
         public string Postcode { get; set; }
         public string Bedroom2 { get; set; }
         public double? Bathroom { get; set; }
-        public double? Landsize { get; set; }
+        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
+        public double Landsize { get; set; }
         public double? BuildingArea { get; set; }
         public double? YearBuilt { get; set; }
         public string CouncilArea { get; set; }

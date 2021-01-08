@@ -1,56 +1,233 @@
 ﻿@page "/predictmelbourne"
-@using Microsoft.AspNetCore.Authorization
-@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
-@using BlazorHousePriceApp.Shared
-@attribute [Authorize]
 @inject HttpClient Http
 
-<h1>Weather forecast</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+<h3>Predict House Price Melbourne</h3>
 
-@if (forecasts == null)
+<div class="col-12">
+    <h3><b>Enter House Information</b></h3>
+    <hr />
+
+    <EditForm Model="@house" OnValidSubmit="@PredictPrice">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Rooms :</label>
+            <input type="number" class="form-control col-3" @bind="house.Rooms" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Price :</label>
+            <input type="number" class="form-control col-3" @bind="house.Price" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Distance :</label>
+            <input type="number" class="form-control col-3" @bind="house.Distance" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Postcode :</label>
+            <input type="text" class="form-control col-3" @bind="house.Postcode" placeholder="string" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Bedrooms :</label>
+            <input type="text" class="form-control col-3" @bind="house.Bedroom2" placeholder="string" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Bathrooms :</label>
+            <input type="number" class="form-control col-3" @bind="house.Bathroom" />
+            <ValidationMessage For="@(()=> house.Bathroom)" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Land Size :</label>
+            <input type="number" class="form-control col-3" @bind="house.Landsize" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Building Area :</label>
+            <input type="number" class="form-control col-3" @bind="house.BuildingArea" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Year Built :</label>
+            <input type="number" class="form-control col-3" @bind="house.YearBuilt" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Council Area :</label>
+            <input type="text" class="form-control col-3" @bind="house.CouncilArea" placeholder="string" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Region Name :</label>
+            <input type="text" class="form-control col-3" @bind="house.Regionname" placeholder="string" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">Prediction ID :</label>
+            <input type="text" class="form-control col-3" @bind="house.PredictionId" placeholder="string" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <span class="col-2"></span>
+            <input type="submit" class="form-control col-1 btn btn-primary" value="Predict" />
+        </div>
+    </EditForm>
+</div>
+
+
+
+@if (predictedPrice == null)
 {
-    <p><em>Loading...</em></p>
+    <p><em>Please fill in the house data...</em></p>
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var forecast in forecasts)
-            {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <h2>Price prediction : $@Math.Round(predictedPrice.Score, 2)</h2>
+    <h3>1 sq. ft.: @Math.Round(m2, 2);</h3>
+
+    @if (predictedPrice.Score - askingPrice > 0)
+    {
+        <h3>Underpriced by @Math.Round(Math.Abs(predictedPrice.Score - askingPrice), 2)</h3>
+    }
+    else
+    {
+        <h3>Overpriced by @Math.Round(Math.Abs(predictedPrice.Score - askingPrice), 2)</h3>
+    }
+
+    <select class="form-control selectpicker" @bind="choice">
+        <option>--select currency--</option>
+        @foreach (var item in converter.conversion_rates.GetType().GetProperties())
+        {
+            <option value="@item.GetValue(converter.conversion_rates, null)">@item.Name</option>
+        }
+
+    </select>
+
+    @if (choice == 0)
+    {
+        <h4>Please select your currency</h4>
+    }
+    else
+    {
+        <h4>Price in specified currency: @Math.Round((predictedPrice.Score * choice), 2)</h4>
+    }
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 p-4">
+            <RadzenChart>
+                <RadzenBarSeries Data="@blueChart" CategoryProperty="Text" Title="PredictedPrice/AverageMelbournePrice" LineType="LineType.Dashed" ValueProperty="Value" />
+                <RadzenBarSeries Data="@greenChart" CategoryProperty="Text" Title="PredictedPrice/AskingPrice" ValueProperty="Value" />
+                <RadzenValueAxis>
+                    <RadzenGridLines Visible="true" />
+                    <RadzenAxisTitle Text="Visual Representation" />
+                </RadzenValueAxis>
+                <RadzenBarOptions Radius="5" />
+            </RadzenChart>
+        </div>
+    </div>
+
 }
 
-@code {
-    private WeatherForecast[] forecasts;
 
-    protected override async Task OnInitializedAsync()
+
+
+
+@code {
+
+    double choice = 0;
+
+    public Data.Melbourne house { get; set; }
+    public Prediction predictedPrice;
+    public Data.MelbourneStatistics stats;
+    public Data.CurrencyAPIResponse converter;
+
+    DataItem[] blueChart;
+    DataItem[] greenChart;
+
+    public double m2;
+    public double askingPrice;
+
+
+
+
+    string result;
+
+    public HttpResponseMessage response { get; set; }
+
+    private string apiUrl = "http://localhost:5000/api/v1/Melbourne";
+    private string conversionUrl = "https://v6.exchangerate-api.com/v6/6adc721f7fb5b27c1916c938/latest/USD";
+    private string apiStats = "http://localhost:5000/api/v1/statistics/Melbourne";
+
+    protected async override Task OnInitializedAsync()
     {
-        try
-        {
-            forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
-        }
-        catch (AccessTokenNotAvailableException exception)
-        {
-            exception.Redirect();
-        }
+        house = new Data.Melbourne();
+        converter = await Http.GetFromJsonAsync<Data.CurrencyAPIResponse>(conversionUrl);
+
+        stats = await Http.GetFromJsonAsync<Data.MelbourneStatistics>(apiStats);
+
     }
+
+    private async Task PredictPrice()
+
+    {
+        predictedPrice = null;
+        response = await Http.PostAsJsonAsync(apiUrl, house);
+        result = response.Content.ReadAsStringAsync().Result;
+        predictedPrice = JsonSerializer.Deserialize<Prediction>(result);
+
+        blueChart = new DataItem[]
+        {
+        new DataItem
+        {
+            Text = "AvgPrice",
+            Value = stats.price
+        },
+        new DataItem
+        {
+            Text = "PredictedPrice",
+            Value = predictedPrice.Score
+        }
+                };
+        greenChart = new DataItem[]
+        {
+            new DataItem
+        {
+            Text = "AskingPrice",
+            Value = askingPrice
+        },
+        new DataItem
+        {
+            Text = "PredictedPrice",
+            Value = predictedPrice.Score
+        }
+
+                };
+
+        m2 = predictedPrice.Score / house.Landsize;
+        house = new Data.Melbourne();
+
+    }
+
+    public class Prediction
+    {
+        public double Score { get; set; }
+    }
+
+
+    class DataItem
+    {
+        public string Text { get; set; }
+        public double Value { get; set; }
+
+    }
+
+
+
+
 
 }

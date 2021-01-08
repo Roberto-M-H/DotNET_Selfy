@@ -1,12 +1,4 @@
-﻿using System;
-using BlazorHousePriceApp.Server.Data;
-using BlazorHousePriceApp.Server.Models;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Hosting;
 
 [assembly: HostingStartup(typeof(BlazorHousePriceApp.Server.Areas.Identity.IdentityHostingStartup))]
 namespace BlazorHousePriceApp.Server.Areas.Identity
