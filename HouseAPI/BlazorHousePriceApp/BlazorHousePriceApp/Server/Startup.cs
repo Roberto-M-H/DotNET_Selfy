@@ -1,4 +1,5 @@
 using BlazorHousePriceApp.Server.Data;
+using BlazorHousePriceApp.Server.DataInsert;
 using BlazorHousePriceApp.Server.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
@@ -26,6 +27,10 @@ namespace BlazorHousePriceApp.Server
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<Sims3Context>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("Sims3Connection")));
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 

@@ -46,3 +46,15 @@ E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0
 E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.dll
 E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\ref\BlazorHousePriceApp.Shared.dll
 E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.pdb
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\bin\Debug\net5.0\BlazorHousePriceApp.Shared.deps.json
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\bin\Debug\net5.0\BlazorHousePriceApp.Shared.dll
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\bin\Debug\net5.0\ref\BlazorHousePriceApp.Shared.dll
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\bin\Debug\net5.0\BlazorHousePriceApp.Shared.pdb
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.csprojAssemblyReference.cache
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.AssemblyInfoInputs.cache
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.AssemblyInfo.cs
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.dll
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\ref\BlazorHousePriceApp.Shared.dll
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Shared\obj\Debug\net5.0\BlazorHousePriceApp.Shared.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aPkvpLKfBm6ZbbuB2QLM9etQ8YY5JtRtrAj5LCOUfa/eoZFumbcfJWcXtaV8O30JjL+4eB0/eKdfAH+TgSgb5Q==",
+  "dgSpecHash": "wtTfYBYbUj9CYMj53blL+To12PaSnHGWzWJW1MALbcH0vcxxdEktUrI7jW24Q3+TUOJwot4NzgdMEbFHLdLFLA==",
   "success": true,
-  "projectFilePath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj",
+  "projectFilePath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

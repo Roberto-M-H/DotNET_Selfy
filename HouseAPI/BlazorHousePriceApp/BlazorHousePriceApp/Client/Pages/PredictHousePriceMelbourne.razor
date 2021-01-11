@@ -1,5 +1,6 @@
 ﻿@page "/predictmelbourne"
 @inject HttpClient Http
+@using BlazorHousePriceApp.Data 
 
 
 <h3>Predict House Price Melbourne</h3>
@@ -13,7 +14,7 @@
         <ValidationSummary />
         <div class="col-12 row">
             <label class="col-2 font-weight-bold">Rooms :</label>
-            <input type="number" class="form-control col-3" @bind="house.Rooms" />
+            <input type="number" class="form-control col-3" @bind="house.Rooms"  />
         </div>
         <br />
         <div class="col-12 row">
@@ -28,12 +29,12 @@
         <br />
         <div class="col-12 row">
             <label class="col-2 font-weight-bold">Postcode :</label>
-            <input type="text" class="form-control col-3" @bind="house.Postcode" placeholder="string" />
+            <input type="number" class="form-control col-3" @bind="house.Postcode" />
         </div>
         <br />
         <div class="col-12 row">
             <label class="col-2 font-weight-bold">Bedrooms :</label>
-            <input type="text" class="form-control col-3" @bind="house.Bedroom2" placeholder="string" />
+            <input type="number" class="form-control col-3" @bind="house.Bedroom2" />
         </div>
         <br />
         <div class="col-12 row">
@@ -67,11 +68,7 @@
             <input type="text" class="form-control col-3" @bind="house.Regionname" placeholder="string" />
         </div>
         <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Prediction ID :</label>
-            <input type="text" class="form-control col-3" @bind="house.PredictionId" placeholder="string" />
-        </div>
-        <br />
+        
         <div class="col-12 row">
             <span class="col-2"></span>
             <input type="submit" class="form-control col-1 btn btn-primary" value="Predict" />
@@ -141,7 +138,7 @@ else
 
     double choice = 0;
 
-    public Data.Melbourne house { get; set; }
+    public Melbourne house { get; set; }
     public Prediction predictedPrice;
     public Data.MelbourneStatistics stats;
     public Data.CurrencyAPIResponse converter;
@@ -165,7 +162,7 @@ else
 
     protected async override Task OnInitializedAsync()
     {
-        house = new Data.Melbourne();
+        house = new Melbourne();
         converter = await Http.GetFromJsonAsync<Data.CurrencyAPIResponse>(conversionUrl);
 
         stats = await Http.GetFromJsonAsync<Data.MelbourneStatistics>(apiStats);
@@ -198,7 +195,7 @@ else
             new DataItem
         {
             Text = "AskingPrice",
-            Value = askingPrice
+            Value = house.Price
         },
         new DataItem
         {
@@ -209,7 +206,7 @@ else
                 };
 
         m2 = predictedPrice.Score / house.Landsize;
-        house = new Data.Melbourne();
+        house = new Melbourne();
 
     }
 
