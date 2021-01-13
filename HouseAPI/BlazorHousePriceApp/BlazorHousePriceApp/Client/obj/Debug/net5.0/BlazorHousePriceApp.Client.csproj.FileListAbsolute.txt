@@ -3385,3 +3385,6 @@ C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHous
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\BlazorHousePriceApp.Client.pdb
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\RazorDeclaration\Pages\InsertHouse.razor.g.cs
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\Razor\Pages\InsertHouse.razor.g.cs
+E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\RazorDeclaration\Pages\InsertHouse.razor.g.cs
+E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\Razor\Pages\InsertHouse.razor.g.cs
+E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\scopedcss\Shared\LoginDisplay.razor.rz.scp.css
