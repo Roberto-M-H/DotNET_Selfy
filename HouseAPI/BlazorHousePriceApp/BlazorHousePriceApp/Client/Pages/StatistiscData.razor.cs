@@ -20,7 +20,7 @@ namespace BlazorHousePriceApp.Client.Pages
         protected override async Task OnInitializedAsync()
         {
             houses = await Http.GetFromJsonAsync<Statistics[]>(apiUrl);
-            Cities = Array.ConvertAll(houses, x => new T(x)).ToList();
+            Cities = Array.ConvertAll(houses.OrderBy(h => h.DateOfStatistic).ToArray(), x => new T(x)).ToList();
             //Singapore = Array.ConvertAll(houses, x => new T(x)).Where(x => x.name.Equals("Singapore")).ToList();
         }
 

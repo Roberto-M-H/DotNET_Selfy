@@ -124,13 +124,6 @@ using AntDesign.Charts;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\Index.razor"
-using BlazorHousePriceApp.Data;
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -140,7 +133,7 @@ using BlazorHousePriceApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 22 "C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\Index.razor"
+#line 21 "C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\Index.razor"
        
     int zoom = 1;
     bool showMadridMarker;

@@ -1,6 +1,8 @@
 ﻿@page "/inserthouse"
-@inject HttpClient Http
 
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@inject HttpClient Http
 
 <h3>Insert a House</h3>
 

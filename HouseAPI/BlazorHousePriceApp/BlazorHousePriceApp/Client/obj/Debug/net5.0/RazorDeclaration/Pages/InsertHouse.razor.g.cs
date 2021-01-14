@@ -124,6 +124,20 @@ using AntDesign.Charts;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\InsertHouse.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\InsertHouse.razor"
+           [Authorize]
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/inserthouse")]
     public partial class InsertHouse : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -133,7 +147,7 @@ using AntDesign.Charts;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 159 "C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\InsertHouse.razor"
+#line 161 "C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\Pages\InsertHouse.razor"
        
 
     public Data.Texa house { get; set; }
