@@ -6,6 +6,7 @@ namespace BlazorHousePriceApp.Data
     public class Texa
     {
         public double Id { get; set; }
+        [Required]
         public string Date { get; set; }
         public double Price { get; set; }
         public double Bedrooms { get; set; }

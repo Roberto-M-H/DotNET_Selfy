@@ -8,6 +8,7 @@
   "resources": {
     "assembly": {
       "AntDesign.Charts.dll": "sha256-6+tCT1cY4tdRz6r1nJhUBVqoCrunjnSWVWCdqHNsBVY=",
+      "Ardalis.SmartEnum.dll": "sha256-kK24v30UasObRI2M8M3rNmC9yRURTalxnB3h9031lIw=",
       "BlazorComponentUtilities.dll": "sha256-9VqqASjMRw8LX9vNXRKXBE+XlDpUfTeuo4+CPgg1fQE=",
       "BlazorPro.Spinkit.dll": "sha256-ldy4keIJ0nBW2BNTobib50TbEBWstZkhOQMJ5PN+CXU=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-7P3zpzQg+C+ukPy7fBNY8UW+Ro+yLdvnT6d4iP13FuE=",
@@ -204,13 +205,13 @@
       "mscorlib.dll": "sha256-i0zXLOX1XZekwNvRdQK9WDvRWKFggLp7KDCnvMrn+HQ=",
       "netstandard.dll": "sha256-4QNBIB4DMwj82CYd96oFrTh3fcrmyaDjtQ2dBTyWz7Q=",
       "System.Private.CoreLib.dll": "sha256-5Zk+rN+j5FbFEQJdT8YR2O0i6KWpvrERsaPZCv69DmI=",
-      "BlazorHousePriceApp.Shared.dll": "sha256-c7uK1uGNbBQDtsI11upjPLhWbqjaUzrT5g8zTJdTti8=",
-      "BlazorHousePriceApp.Client.dll": "sha256-\/urYkKjyURHcrRJ0rzQtgFwXP7NJzqWb9teja0cxqOM="
+      "BlazorHousePriceApp.Shared.dll": "sha256-1p06R0Ydk3WWV5CA3+XvJRs2mozMSnCsWFwLYzK1ghg=",
+      "BlazorHousePriceApp.Client.dll": "sha256-CI38oydlnw2G3hOhxzU6VnP3TSoce25b1CmXPAXHJF4="
     },
     "lazyAssembly": null,
     "pdb": {
-      "BlazorHousePriceApp.Shared.pdb": "sha256-yFP3jtYgjo+6l0zxN21HuuehDBaAz1S+1yz1O2wRhwk=",
-      "BlazorHousePriceApp.Client.pdb": "sha256-QY7dv\/1UTbSaFTSgicNsLRuI5yjkku4YNMXBSWcU+PQ="
+      "BlazorHousePriceApp.Shared.pdb": "sha256-PhM0rkbfh3bvxWrXJG+4ix5SlLPPwSA9ylLQOIVyTe8=",
+      "BlazorHousePriceApp.Client.pdb": "sha256-uJV4pcH1V8J6fgQewNZR0jnBeOkdcPcUp9Q\/DIUxiEg="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-2ldEe2K8ARFKSIBsv+Hr3iNQzq9qh1H\/dwdu2r+AIyY=",

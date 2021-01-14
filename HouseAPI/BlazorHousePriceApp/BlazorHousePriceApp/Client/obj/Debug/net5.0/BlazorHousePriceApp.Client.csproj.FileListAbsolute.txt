@@ -3134,7 +3134,6 @@ C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHous
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\BlazorHousePriceApp.Client.RazorComponent.input.cache
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Authentication.razor.g.cs
-C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Chart.razor.g.cs
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\RazorDeclaration\Pages\MelbourneLatestStats.razor.g.cs
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\RazorDeclaration\Pages\PredictHousePriceMelbourne.razor.g.cs
@@ -3154,7 +3153,6 @@ C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHous
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\BlazorHousePriceApp.Client.RazorCoreGenerate.cache
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\Razor\App.razor.g.cs
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\Razor\Pages\Authentication.razor.g.cs
-C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\Razor\Pages\Chart.razor.g.cs
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\Razor\Pages\MelbourneLatestStats.razor.g.cs
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\Razor\Pages\PredictHousePriceMelbourne.razor.g.cs
@@ -3388,3 +3386,7 @@ C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHous
 E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\RazorDeclaration\Pages\InsertHouse.razor.g.cs
 E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\Razor\Pages\InsertHouse.razor.g.cs
 E:\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\scopedcss\Shared\LoginDisplay.razor.rz.scp.css
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\scopedcss\Shared\LoginDisplay.razor.rz.scp.css
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\bin\Debug\net5.0\wwwroot\_framework\Ardalis.SmartEnum.dll.gz
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\bin\Debug\net5.0\wwwroot\_framework\Ardalis.SmartEnum.dll
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Client\obj\Debug\net5.0\build-gz\LQFwS9aC.gz

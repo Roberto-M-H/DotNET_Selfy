@@ -7,6 +7,6 @@ namespace BlazorHousePriceApp.Server.DataInsert
 {
     public interface IInsertRepository
     {
-        public void InsertHouse(City city);
+        public void InsertHouse(Texa city);
     }
 }

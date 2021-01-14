@@ -1143,3 +1143,4 @@ C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHous
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Server\obj\Debug\net5.0\ref\BlazorHousePriceApp.Server.dll
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Server\obj\Debug\net5.0\BlazorHousePriceApp.Server.pdb
 C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Server\obj\Debug\net5.0\BlazorHousePriceApp.Server.genruntimeconfig.cache
+C:\Users\Florentin\Documents\GitHub\.NET\HouseAPI\BlazorHousePriceApp\BlazorHousePriceApp\Server\bin\Debug\net5.0\Ardalis.SmartEnum.dll

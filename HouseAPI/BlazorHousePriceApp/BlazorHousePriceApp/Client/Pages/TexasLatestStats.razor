@@ -45,7 +45,7 @@ else
                         </h4>
                     </Template>
                 </RadzenRadialGaugeScalePointer>
-                <RadzenRadialGaugeScaleRange From="0" To="(int)stats.maxPrice/30000" Fill="green" />
+                <RadzenRadialGaugeScaleRange From="0" To="T.CalculateChartGreenValues(stats.maxPrice)" Fill="green" />
                 <RadzenRadialGaugeScaleRange From="(int)stats.maxPrice/30000" To="(int)stats.maxPrice/15000" Fill="orange" />
                 <RadzenRadialGaugeScaleRange From="(int)stats.maxPrice/15000" To="(int)stats.maxPrice/10000" Fill="red" />
             </RadzenRadialGaugeScale>
@@ -63,8 +63,13 @@ else
 
     private string apiUrl = "http://localhost:5000/api/v1/statistics/Texas";
 
+    City T = new City();
+    City M = new City();
+
     protected override async Task OnInitializedAsync()
     {
+        T.Type = CityType.Texas;
+        M.Type = CityType.Melbourne;
         stats = await Http.GetFromJsonAsync<TexasStatistics>(apiUrl);
     }
 

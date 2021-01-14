@@ -15,6 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorHousePriceApp.Server"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorHousePriceApp.Client", "..\BlazorHousePriceApp\BlazorHousePriceApp\Client\BlazorHousePriceApp.Client.csproj", "{CCDEB841-B973-4576-AD35-7ADA0C661015}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorHousePrice.UnitTests", "..\BlazorHousePrice.UnitTests\BlazorHousePrice.UnitTests.csproj", "{68B1E84A-2C30-4752-82D9-9811C256ED75}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ADBBDD31-1F50-49FA-91DF-B52E3CBD2405} = {ADBBDD31-1F50-49FA-91DF-B52E3CBD2405}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +50,10 @@ Global
 		{CCDEB841-B973-4576-AD35-7ADA0C661015}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCDEB841-B973-4576-AD35-7ADA0C661015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCDEB841-B973-4576-AD35-7ADA0C661015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B1E84A-2C30-4752-82D9-9811C256ED75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B1E84A-2C30-4752-82D9-9811C256ED75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B1E84A-2C30-4752-82D9-9811C256ED75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B1E84A-2C30-4752-82D9-9811C256ED75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

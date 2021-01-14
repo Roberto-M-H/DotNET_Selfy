@@ -58,8 +58,13 @@ else
 
     private string apiUrl = "http://localhost:5000/api/v1/statistics/Melbourne";
 
+    City T = new City();
+    City M = new City();
+
     protected override async Task OnInitializedAsync()
     {
+        T.Type = CityType.Texas;
+        M.Type = CityType.Melbourne;
         stats = await Http.GetFromJsonAsync<MelbourneStatistics>(apiUrl);
     }
 

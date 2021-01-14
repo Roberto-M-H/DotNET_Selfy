@@ -336,6 +336,17 @@
           "lib/netstandard2.1/AntDesign.Charts.dll": {}
         }
       },
+      "Ardalis.SmartEnum/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Ardalis.SmartEnum.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Ardalis.SmartEnum.dll": {}
+        }
+      },
       "AutoMapper/10.0.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -2630,6 +2641,7 @@
       "BlazorHousePriceApp.Client/1.0.0": {
         "dependencies": {
           "AntDesign.Charts": "0.2.0",
+          "Ardalis.SmartEnum": "2.0.0",
           "BlazorHousePriceApp.Shared": "1.0.0",
           "BlazorPro.Spinkit": "1.2.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.0",
@@ -4329,6 +4341,13 @@
       "sha512": "sha512-pPea/nNbboiAtQrEUJEqgp2F+Bb6ZLVBTOxSSDQ1gMUD3wnO9w4567bfaauIbYFCxm4pxdFRGiM/iRcJM14uOw==",
       "path": "antdesign.charts/0.2.0",
       "hashPath": "antdesign.charts.0.2.0.nupkg.sha512"
+    },
+    "Ardalis.SmartEnum/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E3g+ofJjn3J5JAAyLNFhgUYXnkIXM8HJ+BmzgRb9ZZsmQV3jfWJTE3FZXLPs/zPf0Zz0jyLvjcExnrZeFXX6oA==",
+      "path": "ardalis.smartenum/2.0.0",
+      "hashPath": "ardalis.smartenum.2.0.0.nupkg.sha512"
     },
     "AutoMapper/10.0.0": {
       "type": "package",

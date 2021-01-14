@@ -8,133 +8,149 @@
     <h3><b>Enter House Information</b></h3>
     <hr />
 
-    <EditForm Model="@house" OnValidSubmit="@InsertAHouse">
-        <DataAnnotationsValidator />
-        <ValidationSummary />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Id :</label>
-            <input type="number" class="form-control col-3" @bind="house.Id" />
-        </div>
+    <select class="form-control selectpicker" @bind="choice">
+        <option>--select currency--</option>
+
+        <option value="1">Texas</option>
+        <option value="2">Melbourne</option>
+
+    </select>
+
+    @if (choice == 0)
+    {
+        <h4>Please select a city</h4>
+    }
+    else if (choice == 1)
+    {
         <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Date :</label>
-            <input type="text" class="form-control col-3" @bind="house.Date" placeholder="string" />
-        </div>
+        <EditForm Model="@house" OnValidSubmit="@InsertAHouse">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Id :</label>
+                <input type="number" class="form-control col-3" @bind="house.Id" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Date :</label>
+                <input type="text" class="form-control col-3" @bind="house.Date" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Price :</label>
+                <input type="number" class="form-control col-3" @bind="house.Price" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Bedrooms :</label>
+                <input type="number" class="form-control col-3" @bind="house.Bedrooms" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Bathrooms :</label>
+                <input type="number" class="form-control col-3" @bind="house.Bathrooms" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">SqftLiving :</label>
+                <input type="number" class="form-control col-3" @bind="house.SqftLiving" />
+                <ValidationMessage For="@(() => house.SqftLiving)" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">SqftLot :</label>
+                <input type="number" class="form-control col-3" @bind="house.SqftLot" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Floors :</label>
+                <input type="number" class="form-control col-3" @bind="house.Floors" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Waterfront :</label>
+                <input type="number" class="form-control col-3" @bind="house.Waterfront" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">View :</label>
+                <input type="number" class="form-control col-3" @bind="house.View" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Condition :</label>
+                <input type="number" class="form-control col-3" @bind="house.Condition" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Grade :</label>
+                <input type="number" class="form-control col-3" @bind="house.Grade" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">SqftAbove :</label>
+                <input type="number" class="form-control col-3" @bind="house.SqftAbove" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">SqftBasement :</label>
+                <input type="number" class="form-control col-3" @bind="house.SqftBasement" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">YrBuilt :</label>
+                <input type="number" class="form-control col-3" @bind="house.YrBuilt" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">YrRenovated :</label>
+                <input type="number" class="form-control col-3" @bind="house.YrRenovated" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Zipcode :</label>
+                <input type="number" class="form-control col-3" @bind="house.Zipcode" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Lat :</label>
+                <input type="number" class="form-control col-3" @bind="house.Lat" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">Long :</label>
+                <input type="number" class="form-control col-3" @bind="house.Long" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">SqftLiving15 :</label>
+                <input type="number" class="form-control col-3" @bind="house.SqftLiving15" />
+            </div>
+            <br />
+            <div class="col-12 row">
+                <label class="col-2 font-weight-bold">SqftLot15 :</label>
+                <input type="number" class="form-control col-3" @bind="house.SqftLot15" />
+            </div>
+            <br />
+
+            <div class="col-12 row">
+                <span class="col-2"></span>
+                <input type="submit" class="form-control col-1 btn btn-primary" value="Insert" />
+            </div>
+        </EditForm>
+    }
+
+    @if (inserted == false)
+    {
+        <p><em>Please fill in the house data...</em></p>
+    }
+    else
+    {
+        <h3>House Added</h3>
         <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Price :</label>
-            <input type="number" class="form-control col-3" @bind="house.Price" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Bedrooms :</label>
-            <input type="number" class="form-control col-3" @bind="house.Bedrooms" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Bathrooms :</label>
-            <input type="number" class="form-control col-3" @bind="house.Bathrooms" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">SqftLiving :</label>
-            <input type="number" class="form-control col-3" @bind="house.SqftLiving" />
-            <ValidationMessage For="@(()=> house.SqftLiving)" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">SqftLot :</label>
-            <input type="number" class="form-control col-3" @bind="house.SqftLot" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Floors :</label>
-            <input type="number" class="form-control col-3" @bind="house.Floors" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Waterfront :</label>
-            <input type="number" class="form-control col-3" @bind="house.Waterfront" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">View :</label>
-            <input type="number" class="form-control col-3" @bind="house.View" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Condition :</label>
-            <input type="number" class="form-control col-3" @bind="house.Condition" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Grade :</label>
-            <input type="number" class="form-control col-3" @bind="house.Grade" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">SqftAbove :</label>
-            <input type="number" class="form-control col-3" @bind="house.SqftAbove" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">SqftBasement :</label>
-            <input type="number" class="form-control col-3" @bind="house.SqftBasement" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">YrBuilt :</label>
-            <input type="number" class="form-control col-3" @bind="house.YrBuilt" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">YrRenovated :</label>
-            <input type="number" class="form-control col-3" @bind="house.YrRenovated" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Zipcode :</label>
-            <input type="number" class="form-control col-3" @bind="house.Zipcode" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Lat :</label>
-            <input type="number" class="form-control col-3" @bind="house.Lat" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">Long :</label>
-            <input type="number" class="form-control col-3" @bind="house.Long" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">SqftLiving15 :</label>
-            <input type="number" class="form-control col-3" @bind="house.SqftLiving15" />
-        </div>
-        <br />
-        <div class="col-12 row">
-            <label class="col-2 font-weight-bold">SqftLot15 :</label>
-            <input type="number" class="form-control col-3" @bind="house.SqftLot15" />
-        </div>
-        <br />
-        
-        <div class="col-12 row">
-            <span class="col-2"></span>
-            <input type="submit" class="form-control col-1 btn btn-primary" value="Insert" />
-        </div>
-    </EditForm>
+    }
 </div>
 
-
-
-@if (inserted == false)
-{
-    <p><em>Please fill in the house data...</em></p>
-}
-else
-{
-    <h3>House Inserted</h3>
-}
 
 
 
@@ -142,12 +158,9 @@ else
 
 @code {
 
-
-
     public Data.Texa house { get; set; }
     public bool inserted = false;
-
-    string result;
+    double choice = 0;
 
     public HttpResponseMessage response { get; set; }
 
@@ -167,17 +180,6 @@ else
         house = new Data.Texa();
         inserted = true;
     }
-
-
-    /*
-
-    var httpclient = new HttpClient();
-            var response = await httpclient.GetAsync(apiUrl);
-            string responseAsString = response.Content.ReadAsStringAsync().Result;
-            var statistics = System.Text.Json.JsonSerializer.Deserialize<TexasStatistics>(responseAsString);
-
-
-    */
 
 
 }

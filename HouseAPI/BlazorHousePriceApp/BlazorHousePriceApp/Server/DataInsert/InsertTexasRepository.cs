@@ -13,10 +13,11 @@ namespace BlazorHousePriceApp.Server.DataInsert
         {
             this.context = context;
         }
-        public void InsertHouse(City city)
+        public void InsertHouse(Texa city)
         {
-            this.context.Texas.Add((Texa)city);
+            this.context.Texas.Add(city);
             this.context.SaveChanges();
+
         }
     }
 }

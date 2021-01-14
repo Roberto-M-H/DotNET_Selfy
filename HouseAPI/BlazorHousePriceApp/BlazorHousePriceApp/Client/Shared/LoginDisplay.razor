@@ -7,12 +7,12 @@
 
 <AuthorizeView>
     <Authorized>
-        <a class=" btn-grad" href="authentication/profile">Hello, @context.User.Identity.Name!</a>
-        <button class=" btn-grad" @onclick="BeginSignOut">Log out</button>
+        <a href="authentication/profile">Hello, @context.User.Identity.Name!</a>
+        <button class="nav-link btn btn-link" @onclick="BeginSignOut">Log out</button>
     </Authorized>
     <NotAuthorized>
-        <a class=" btn-grad" href="authentication/register">Register</a>
-        <a class=" btn-grad" href="authentication/login">Log in</a>
+        <a href="authentication/register">Register</a>
+        <a href="authentication/login">Log in</a>
     </NotAuthorized>
 </AuthorizeView>
 

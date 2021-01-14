@@ -22,6 +22,15 @@
           "buildMultiTargeting/AntDesign.Charts.props": {}
         }
       },
+      "Ardalis.SmartEnum/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Ardalis.SmartEnum.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ardalis.SmartEnum.dll": {}
+        }
+      },
       "AutoMapper/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -3267,6 +3276,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "AntDesign.Charts": "0.2.0",
+          "Ardalis.SmartEnum": "2.0.0",
           "BlazorHousePriceApp.Shared": "1.0.0",
           "BlazorPro.Spinkit": "1.2.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.0",
@@ -3311,6 +3321,22 @@
         "lib/netstandard2.1/AntDesign.Charts.dll",
         "staticwebassets/ant-design-charts-blazor.js",
         "staticwebassets/g2plot.js"
+      ]
+    },
+    "Ardalis.SmartEnum/2.0.0": {
+      "sha512": "E3g+ofJjn3J5JAAyLNFhgUYXnkIXM8HJ+BmzgRb9ZZsmQV3jfWJTE3FZXLPs/zPf0Zz0jyLvjcExnrZeFXX6oA==",
+      "type": "package",
+      "path": "ardalis.smartenum/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ardalis.smartenum.2.0.0.nupkg.sha512",
+        "ardalis.smartenum.nuspec",
+        "icon.png",
+        "lib/net452/Ardalis.SmartEnum.dll",
+        "lib/net452/Ardalis.SmartEnum.xml",
+        "lib/netstandard2.0/Ardalis.SmartEnum.dll",
+        "lib/netstandard2.0/Ardalis.SmartEnum.xml"
       ]
     },
     "AutoMapper/10.0.0": {
@@ -10320,25 +10346,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Stefan\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Florentin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Server\\BlazorHousePriceApp.Server.csproj",
+      "projectUniqueName": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Server\\BlazorHousePriceApp.Server.csproj",
       "projectName": "BlazorHousePriceApp.Server",
-      "projectPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Server\\BlazorHousePriceApp.Server.csproj",
-      "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-      "outputPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Server\\obj\\",
+      "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Server\\BlazorHousePriceApp.Server.csproj",
+      "packagesPath": "C:\\Users\\Florentin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Florentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -10351,11 +10372,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj": {
-              "projectPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj"
+            "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj": {
+              "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Client\\BlazorHousePriceApp.Client.csproj"
             },
-            "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj": {
-              "projectPath": "E:\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj"
+            "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\Florentin\\Documents\\GitHub\\.NET\\HouseAPI\\BlazorHousePriceApp\\BlazorHousePriceApp\\Shared\\BlazorHousePriceApp.Shared.csproj"
             }
           }
         }

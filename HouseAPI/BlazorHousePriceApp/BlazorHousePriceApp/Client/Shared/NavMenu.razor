@@ -6,58 +6,59 @@
 </div>
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <ul class="nav flex-column">
-        <LoginDisplay />
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="predicttexas">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Texas
+            <NavLink class="nav-link" href="" @onclick="()=>expandSubMenu = !expandSubMenu">
+                <span class="oi oi-dollar" aria-hidden="true"></span> Predict Price
             </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="predictmelbourne">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Melbourne
-            </NavLink>
+            @if (expandSubMenu)
+            {
+            <ul class="nav flex-column">
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="predicttexas">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Texas
+                    </NavLink>
+                </li>
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="predictmelbourne">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Melbourne
+                    </NavLink>
+                </li>
+            
+        </ul>
+             }
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="statisticsdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Statistics
+                <span class="oi oi-bar-chart" aria-hidden="true"></span> Statistics
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="texaslateststats">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Latest Texas Stats
+                <span class="oi oi-pie-chart" aria-hidden="true"></span> Latest Texas Stats
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="melbournelateststats">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Latest Melbourne Stats
+                <span class="oi oi-pie-chart" aria-hidden="true"></span> Latest Melbourne Stats
             </NavLink>
         </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="chart">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Chart
-            </NavLink>
-        </li>
+        
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="inserthouse">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Insert House
+                <span class="oi oi-cloud-upload" aria-hidden="true"></span> Insert House
             </NavLink>
         </li>
     </ul>
 </div>
 
-<footer class="top-row footer border-top text-muted">
-    <div class="container">
-        &copy; 2021 - Sims3.NET - <a asp-area="" asp-page="Privacy">Privacy</a>
-    </div>
-</footer>
-
 @code {
     private bool collapseNavMenu = true;
+    private bool expandSubMenu = false;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 

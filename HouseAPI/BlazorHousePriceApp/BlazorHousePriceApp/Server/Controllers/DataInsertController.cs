@@ -14,10 +14,11 @@ namespace BlazorHousePriceApp.Server.Controllers
     {
         private readonly Sims3Context context;
 
+        private readonly IInsertRepository _repository;
 
-        public DataInsertController(Sims3Context context)
+        public DataInsertController(IInsertRepository repository)
         {
-            this.context = context;
+            _repository = repository;
         }
 
         [HttpGet("{id}", Name = "GetById")]
@@ -27,8 +28,7 @@ namespace BlazorHousePriceApp.Server.Controllers
         [HttpPost]
         public IActionResult InsertHouse(Texa house)
         {
-            this.context.Texas.Add(house);
-            this.context.SaveChanges();
+            _repository.InsertHouse(house);
             return CreatedAtAction(nameof(GetById), new { id = house.PredictionId }, house);
         }
 
