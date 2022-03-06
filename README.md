@@ -45,13 +45,3 @@ Housing price production is one of those simple machine learning projects that t
 
 ## How to use?
 
-
-## Credits
-1. [Miler Robert Stefan](https://github.com/MilerRS)
-2. [Raileanu Andrei](https://github.com/R-And)
-3. [Iacob Stefan](https://github.com/Stefan-Stev)
-4. [Tomescu Tudor-Gabriel](https://github.com/Herastis)
-5. [Plesescu Adrian](https://github.com/AdutP)
-
-## License
-© [Sims3]()
